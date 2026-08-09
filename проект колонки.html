@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>&#x1f3b8; &Pcy;&rcy;&ocy;&iecy;&kcy;&tcy; &laquo;StereoRock 15 DSP&raquo; &mdash; &fcy;&icy;&ncy;&acy;&lcy;&softcy;&ncy;&acy;&yacy; &dcy;&ocy;&kcy;&ucy;&mcy;&iecy;&ncy;&tcy;&acy;&tscy;&icy;&yacy; &lpar;&vcy;&iecy;&rcy;&scy;&icy;&yacy; 6&period;1&rpar;</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <span id="markdown-mermaid" aria-hidden="true" data-config="{&quot;darkModeTheme&quot;:&quot;vscode&quot;,&quot;lightModeTheme&quot;:&quot;vscode&quot;,&quot;maxTextSize&quot;:50000,&quot;clickDrag&quot;:&quot;alt&quot;,&quot;showControls&quot;:&quot;onHoverOrFocus&quot;,&quot;resizable&quot;:true,&quot;maxHeight&quot;:&quot;&quot;}"></span>
+				<p>Ниже — полностью автономная, самодостаточная финальная документация проекта «StereoRock 15 DSP», версия 6.1. В ней нет ни одной ссылки на предыдущие версии или внешние обсуждения — всё необходимое для заказа распила, закупки и сборки собрано в одном документе.</p>
+<hr>
+<h1 id="-проект-stereorock-15-dsp--финальная-документация-версия-61">🎸 Проект «StereoRock 15 DSP» — финальная документация (версия 6.1)</h1>
+<p><strong>Дата:</strong> 09.08.2026<br>
+<strong>Версия:</strong> 6.1 (итоговая, автономная, для заказа распила, закупки и сборки)<br>
+<strong>Авторы:</strong> Мастер и Инженер</p>
+<hr>
+<h2 id="1-концепция-и-принципиальные-решения">1. КОНЦЕПЦИЯ И ПРИНЦИПИАЛЬНЫЕ РЕШЕНИЯ</h2>
+<h3 id="11-идея">1.1. Идея</h3>
+<p>Создать единственную активную колонку-моноблок, способную воспроизводить стереозвук с выраженной стереопанорамой, глубоким и упругим басом, пригодную для размещения вблизи слушателя и работающую в окружении чувствительной электроники (FM-тюнер, ноутбук, беспроводная периферия).</p>
+<p><strong>Почему моноблок, а не стереопара:</strong></p>
+<ul>
+<li>Экономия пространства, единственный корпус проще разместить.</li>
+<li>Стереоэффект достигается разнесением твитеров на максимально возможное расстояние в одном корпусе.</li>
+<li>Низкие частоты (до ~300 Гц) практически не локализуются ухом, поэтому общий НЧ-динамик для обоих каналов не нарушает стереокартину.</li>
+</ul>
+<p><strong>Отвергнутые альтернативы:</strong></p>
+<ul>
+<li><em>Классическая стереопара:</em> два корпуса, больше материалов и места.</li>
+<li><em>Пассивный кроссовер:</em> трудоёмкая настройка, негибкость. Выбран активный DSP‑кроссовер.</li>
+</ul>
+<h3 id="12-выбор-динамиков">1.2. Выбор динамиков</h3>
+<ul>
+<li><strong>НЧ/СЧ-динамик: Wavecor WF168OM01</strong> (6.5″, 4 Ом, 88 дБ). Бумажный диффузор с пропиткой, натуральная середина. Qts≈0.45, Vas≈29.5 л, Fs≈39 Гц. В ЗЯ 5.4 л даёт упругий, панчевый бас.</li>
+<li><strong>Твитеры: Sica LP53x58.28/N20 TW</strong> (1″, 8 Ом, 95.8 дБ). Шёлковый купол, закрытая задняя камера, неодимовый магнит с ферромагнитной жидкостью. Разница чувствительности (8 дБ) компенсируется в DSP.</li>
+</ul>
+<p><strong>Отвергнутые альтернативы:</strong> Monacor SPH‑170, Visaton W 170 S, Peerless SDS, Vifa BC25SC06‑04, Peerless DX25TG59‑04 (заменены по доступности/цене).</p>
+<h3 id="13-усилитель-и-dsp">1.3. Усилитель и DSP</h3>
+<p><strong>Wondom JAB4 (TPA3221 + ADAU1701).</strong> 4‑канальный усилитель класса D (2.1: стерео + мостовой сабвуфер). Встроенный DSP‑кроссовер (2.8 кГц), эквалайзер, компенсация баффл-степа и разницы чувствительности.</p>
+<p><strong>Преимущества DSP:</strong></p>
+<ul>
+<li>Программная частота раздела, порядок фильтра, уровни.</li>
+<li>Коррекция АЧХ (Subsonic, PEQ, Linkwitz Transform) для компенсации малого объёма ЗЯ.</li>
+<li>Bluetooth 5.0 (внешняя антенна через радиопрозрачное окно).</li>
+</ul>
+<p><strong>Отвергнутые альтернативы:</strong> JAB3+ (нет нативного 2.1), аналоговый кроссовер (пайка SMD, негибкость).</p>
+<h3 id="14-акустика-и-корпус">1.4. Акустика и корпус</h3>
+<p><strong>Закрытый ящик (ЗЯ)</strong> объёмом ~5.4 л (эффективный ~5.9 л). Быстрый, упругий бас. Нижняя граница −3 дБ: 55–60 Гц (с DSP до 45 Гц).</p>
+<p><strong>Материалы:</strong></p>
+<ul>
+<li>ЛДСП 16 мм «бук» (боковины, дно, передняя панель, перегородка).</li>
+<li>ЛМДФ 16 мм белый платиновый (верхняя панель).</li>
+<li>ABS-пластик 5 мм, белый глянцевый (задняя панель).</li>
+</ul>
+<p><strong>Ключевые принципы:</strong></p>
+<ul>
+<li><strong>Полная разборность:</strong> корпус на стальных уголках и винтах, без клея.</li>
+<li><strong>Герметизация:</strong> лента EVA 10×2 мм по всем стыкам.</li>
+<li><strong>Минимум видимого крепежа:</strong> винты утоплены или скрыты. Единственная ручка громкости на верхней панели.</li>
+<li><strong>Тонкая ручная кромка:</strong> 0.5 мм меламин, утюг.</li>
+</ul>
+<p><strong>Отвергнутые альтернативы:</strong> фазоинвертор (громоздкий), толстая кромка 2 мм (нужен станок), задняя панель из ЛДСП (проблема монтажа регуляторов).</p>
+<h3 id="15-экранирование-и-заземление">1.5. Экранирование и заземление</h3>
+<p>Локальная «клетка Фарадея» в отсеке электроники. Медная лента на перегородке, задней панели и вдоль стыков. Алюминиевые шины в углах отсека для непрерывного контура. Защитная неклеевая медная фольга + технический вазелин в местах прижима шин. Заземление по топологии «звезда» с центром на V- блока питания. Контакт задней панели — через нейлоновый винт и авторазъём.</p>
+<p><strong>Сетевые провода:</strong> скручены, пропущены через ферритовое кольцо, экранированы металлорукавом с заземлением с одного конца.</p>
+<hr>
+<h2 id="2-технические-характеристики">2. ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Параметр</th>
+<th style="text-align:left">Значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Конфигурация</strong></td>
+<td style="text-align:left">1 × 6.5″ НЧ/СЧ + 2 × 1″ ВЧ (шёлковый купол)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Усилитель</strong></td>
+<td style="text-align:left">TPA3221 (2.1) + DSP ADAU1701</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Мощность (RMS)</strong></td>
+<td style="text-align:left">~40 Вт (НЧ) + 2×20 Вт (ВЧ) при 24 В</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Частотный диапазон (−3 дБ)</strong></td>
+<td style="text-align:left">45 Гц – 20 кГц (с DSP)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Чувствительность системы</strong></td>
+<td style="text-align:left">~88 дБ (2.83 В / 1 м)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Входы</strong></td>
+<td style="text-align:left">Стерео 3.5 мм, Bluetooth 5.0</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Питание</strong></td>
+<td style="text-align:left">220 В / 50 Гц, потребление ≤ 100 Вт</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Габариты (Ш×В×Г)</strong></td>
+<td style="text-align:left">354 × 222 × 191 мм</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Масса</strong></td>
+<td style="text-align:left">~6.5 кг</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Материал корпуса</strong></td>
+<td style="text-align:left">ЛДСП 16 мм «бук», ЛМДФ 16 мм белый, ABS 5 мм</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Кромка</strong></td>
+<td style="text-align:left">Меламиновая 0.5 мм (белая / «бук»)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="3-внутренние-размеры-отсеков">3. ВНУТРЕННИЕ РАЗМЕРЫ ОТСЕКОВ</h2>
+<ul>
+<li><strong>Общая внутренняя глубина корпуса:</strong> 191 − 16 (передняя панель) − 5 (задняя панель) = <strong>170 мм</strong>.</li>
+<li><strong>Отсек электроники (задний):</strong> глубина <strong>60 мм</strong> от внутренней поверхности задней панели до перегородки. Ширина × Высота × Глубина = 322 × 194 × 60 мм.</li>
+<li><strong>Акустический отсек (передний):</strong> глубина <strong>110 мм</strong> от перегородки до внутренней поверхности передней панели. Ширина × Высота × Глубина = 322 × 194 × 110 мм. Объём ≈5.4 л.</li>
+</ul>
+<hr>
+<h2 id="4-конструкция-корпуса-и-деталировка">4. КОНСТРУКЦИЯ КОРПУСА И ДЕТАЛИРОВКА</h2>
+<h3 id="41-детали">4.1. Детали</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Деталь</th>
+<th style="text-align:left">Материал</th>
+<th style="text-align:left">Размеры (мм)</th>
+<th style="text-align:left">Кол‑во</th>
+<th style="text-align:left">Кромка</th>
+<th style="text-align:left">Примечание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Боковая левая</td>
+<td style="text-align:left">ЛДСП «бук» 16 мм</td>
+<td style="text-align:left">203 × <strong>220</strong></td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Белая 0.5 мм по переднему и верхнему торцам</td>
+<td style="text-align:left">Выступает на 10 мм ниже дна (ножки)</td>
+</tr>
+<tr>
+<td style="text-align:left">Боковая правая</td>
+<td style="text-align:left">ЛДСП «бук» 16 мм</td>
+<td style="text-align:left">203 × <strong>220</strong></td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Белая 0.5 мм по переднему и верхнему торцам</td>
+<td style="text-align:left"><strong>С карманом под боковой C8</strong></td>
+</tr>
+<tr>
+<td style="text-align:left">Дно</td>
+<td style="text-align:left">ЛДСП «бук» 16 мм</td>
+<td style="text-align:left"><strong>322</strong> × 203</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Белая 0.5 мм по переднему торцу</td>
+<td style="text-align:left">Вставляется между боковин</td>
+</tr>
+<tr>
+<td style="text-align:left">Верхняя панель</td>
+<td style="text-align:left"><strong>ЛМДФ белый 16 мм</strong></td>
+<td style="text-align:left"><strong>354</strong> × 203</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Белая 0.5 мм по переднему и боковым торцам</td>
+<td style="text-align:left"><strong>Накладная</strong>, с фрезерованным карманом под регулятор громкости</td>
+</tr>
+<tr>
+<td style="text-align:left">Задняя панель</td>
+<td style="text-align:left"><strong>ABS 5 мм белый глянцевый</strong></td>
+<td style="text-align:left"><strong>354</strong> × <strong>222</strong></td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Без кромки</td>
+<td style="text-align:left">Накладная, съёмная, с задним C8, тумблером селектора, входом 3.5 мм</td>
+</tr>
+<tr>
+<td style="text-align:left">Передняя панель</td>
+<td style="text-align:left">ЛДСП «бук» 16 мм</td>
+<td style="text-align:left"><strong>354</strong> × <strong>222</strong></td>
+<td style="text-align:left">1</td>
+<td style="text-align:left"><strong>Белая 0.5 мм по всему периметру</strong></td>
+<td style="text-align:left">Накладная, закрывает все торцы короба</td>
+</tr>
+<tr>
+<td style="text-align:left">Перегородка</td>
+<td style="text-align:left">ЛДСП «бук» 16 мм</td>
+<td style="text-align:left"><strong>322</strong> × <strong>194</strong></td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Тонкая (0.5 мм) по периметру</td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="42-верхняя-панель-лмдф-16-мм--регулятор-громкости">4.2. Верхняя панель (ЛМДФ 16 мм) — регулятор громкости</h3>
+<ul>
+<li>С обратной стороны фрезеруется карман (сверло Форстнера ∅30 мм, глубина 11 мм, дно 5 мм).</li>
+<li>По центру кармана — сквозное отверстие ∅7 мм под вал потенциометра.</li>
+<li>Координаты центра: X=175 мм (центр ширины), Y=45 мм от переднего края.</li>
+</ul>
+<h3 id="43-задняя-панель-abs-5-мм">4.3. Задняя панель (ABS 5 мм)</h3>
+<ul>
+<li><strong>Задний разъём C8:</strong> прямоугольное окно ~22×14 мм, крепёж нейлоновыми винтами М3×10. Расположение: X=50 мм, Y=30 мм (нижний левый угол).</li>
+<li><strong>Тумблер выбора входа (ON-ON, 2 положения):</strong> отверстие ∅12 мм, X=120 мм, Y=30 мм.</li>
+<li><strong>Вход 3.5 мм:</strong> отверстие ∅6 мм, X=175 мм, Y=80 мм.</li>
+<li><strong>Вентиляция:</strong> 15–20 отверстий ∅8–10 мм в верхней половине, изнутри закрыты стекловолоконной сеткой.</li>
+<li><strong>Крепёж к корпусу:</strong> 6 отверстий ∅4.2 мм под винты М4×20 с потайной головкой.</li>
+<li><strong>Экранирование:</strong> внутренняя сторона полностью оклеена медной лентой (отступ 2–3 мм от отверстий). Контакт с корпусом — через нейлоновый винт М3×12, латунную шайбу, кольцевую клемму и кабельный мост 160 мм с авторазъёмом «папа-мама».</li>
+</ul>
+<h3 id="44-боковая-правая-панель-лдсп-16-мм--боковой-разъём-c8">4.4. Боковая правая панель (ЛДСП 16 мм) — боковой разъём C8</h3>
+<ul>
+<li>С внутренней стороны выбирается прямоугольный карман глубиной 11–12 мм (дно 4–5 мм).</li>
+<li>В «дне» — сквозное окно под C8 (~22×14 мм).</li>
+<li>Разъём вставляется снаружи, фиксируется <strong>саморезами 3×10 мм</strong> изнутри кармана.</li>
+<li>Координаты центра окна: высота <strong>100 мм</strong> от нижнего края, глубина <strong>25 мм</strong> от заднего края.</li>
+<li>Карман после монтажа заклеивается медным скотчем внахлёст с экраном боковины.</li>
+</ul>
+<h3 id="45-передняя-панель-лдсп-бук-16-мм">4.5. Передняя панель (ЛДСП «бук» 16 мм)</h3>
+<ul>
+<li>Отверстия под динамики:
+<ul>
+<li>НЧ Wavecor: ∅146 мм, центр (X=175, Y=105).</li>
+<li>Левый твитер Sica: ∅49 мм, центр (X=50, Y=105).</li>
+<li>Правый твитер Sica: ∅49 мм, центр (X=290, Y=105).</li>
+</ul>
+</li>
+<li>Крепёжные отверстия: 8 шт. ∅4.2 мм под винты М4×20 с потайной головкой.</li>
+</ul>
+<hr>
+<h2 id="5-полная-спецификация-компонентов">5. ПОЛНАЯ СПЕЦИФИКАЦИЯ КОМПОНЕНТОВ</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Поз.</th>
+<th style="text-align:left">Наименование</th>
+<th style="text-align:left">Кол‑во</th>
+<th style="text-align:left">Примечание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">НЧ‑динамик Wavecor WF168OM01 (6.5″, 4 Ом)</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left">Твитер Sica LP53x58.28/N20 TW (1″, 8 Ом)</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">3</td>
+<td style="text-align:left">DSP‑усилитель Wondom JAB4</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">4</td>
+<td style="text-align:left">Программатор ICP3 / USBi</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">5</td>
+<td style="text-align:left">БП Mean Well LRS‑100‑24</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">6</td>
+<td style="text-align:left">Потенциометр 10 кОм линейный</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Регулятор громкости на верхней панели</td>
+</tr>
+<tr>
+<td style="text-align:left">7</td>
+<td style="text-align:left">Тумблер ON‑OFF (главный выключатель) 250 В / 6 А</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">На верхней панели</td>
+</tr>
+<tr>
+<td style="text-align:left">8</td>
+<td style="text-align:left">Тумблер ON‑ON (селектор входов) 250 В / 6 А</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">На задней панели</td>
+</tr>
+<tr>
+<td style="text-align:left">9</td>
+<td style="text-align:left">Разъём C8 «восьмёрка» с крепёжными ушками</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">Задний + боковой</td>
+</tr>
+<tr>
+<td style="text-align:left">10</td>
+<td style="text-align:left">Предохранитель T 2.5 А (5×20 мм) + держатель</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">В разрыв L перед селектором</td>
+</tr>
+<tr>
+<td style="text-align:left">11</td>
+<td style="text-align:left">NTC‑термистор 5D‑15 (5 Ом)</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">В разрыв L перед БП</td>
+</tr>
+<tr>
+<td style="text-align:left">12</td>
+<td style="text-align:left">Варистор 10D471K</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">На клеммах БП</td>
+</tr>
+<tr>
+<td style="text-align:left">13</td>
+<td style="text-align:left">Самовосст. предохранитель PolySwitch 0.1 А (100 мА)</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">В разрыв GND аудиокабеля (защита входа DSP)</td>
+</tr>
+<tr>
+<td style="text-align:left">14</td>
+<td style="text-align:left">Акустический синтепон (негорючий) 50 г</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">В матерчатых подушках</td>
+</tr>
+<tr>
+<td style="text-align:left">15</td>
+<td style="text-align:left">Токопроводящая EMI‑прокладка</td>
+<td style="text-align:left">0.5 м</td>
+<td style="text-align:left">Для задней панели</td>
+</tr>
+<tr>
+<td style="text-align:left">16</td>
+<td style="text-align:left">Ферритовое кольцо clip‑on (∅5–7 мм)</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">На силовых проводах</td>
+</tr>
+<tr>
+<td style="text-align:left">17</td>
+<td style="text-align:left">ЛДСП 16 мм «бук», распил</td>
+<td style="text-align:left">1 компл.</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">18</td>
+<td style="text-align:left">ЛМДФ 16 мм белый платиновый, 354×203 мм</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Верхняя панель</td>
+</tr>
+<tr>
+<td style="text-align:left">19</td>
+<td style="text-align:left">ABS-пластик 5 мм белый глянцевый, 354×222 мм</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Задняя панель</td>
+</tr>
+<tr>
+<td style="text-align:left">20</td>
+<td style="text-align:left">Медная самоклеящаяся лента 20–30 мм</td>
+<td style="text-align:left">1 рулон</td>
+<td style="text-align:left">Основной экран</td>
+</tr>
+<tr>
+<td style="text-align:left">21</td>
+<td style="text-align:left">Медная неклеевая фольга 0.1 мм (полосы 20–25 мм)</td>
+<td style="text-align:left">~1 м</td>
+<td style="text-align:left">Защитный слой под алюминиевые шины</td>
+</tr>
+<tr>
+<td style="text-align:left">22</td>
+<td style="text-align:left">Кромка меламиновая 0.5 мм (белая, «бук»)</td>
+<td style="text-align:left">~5 м</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">23</td>
+<td style="text-align:left">Лента EVA 10×2 мм, чёрная</td>
+<td style="text-align:left">~3 м</td>
+<td style="text-align:left">Герметизация стыков</td>
+</tr>
+<tr>
+<td style="text-align:left">24</td>
+<td style="text-align:left">Резьбовые втулки М4</td>
+<td style="text-align:left">14 шт.</td>
+<td style="text-align:left">Для крепления передней и задней панелей в торец ЛДСП</td>
+</tr>
+<tr>
+<td style="text-align:left">25</td>
+<td style="text-align:left">Резьбовые втулки М3</td>
+<td style="text-align:left">10 шт.</td>
+<td style="text-align:left">Для уголков, БП, стоек</td>
+</tr>
+<tr>
+<td style="text-align:left">26</td>
+<td style="text-align:left">Уголки мебельные 15×15 мм, стальные</td>
+<td style="text-align:left">20 шт.</td>
+<td style="text-align:left">Силовой каркас корпуса</td>
+</tr>
+<tr>
+<td style="text-align:left">27</td>
+<td style="text-align:left">Уголки алюминиевые 15×15 мм (шины экранирования)</td>
+<td style="text-align:left">~2 м</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">28</td>
+<td style="text-align:left">Саморезы 3.5×12 мм (пресс‑шайба)</td>
+<td style="text-align:left">50 шт.</td>
+<td style="text-align:left">Крепёж стальных уголков к ЛДСП</td>
+</tr>
+<tr>
+<td style="text-align:left">29</td>
+<td style="text-align:left">Винты М4×20 с потайной головкой</td>
+<td style="text-align:left">14 шт.</td>
+<td style="text-align:left">Передняя и задняя панели</td>
+</tr>
+<tr>
+<td style="text-align:left">30</td>
+<td style="text-align:left">Силиконовые ножки (4 шт.)</td>
+<td style="text-align:left">1 компл.</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">31</td>
+<td style="text-align:left">Гнездо 3.5 мм стерео на панель (изолированное)</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">32</td>
+<td style="text-align:left">Клеммники WAGO 221 (2‑проводные)</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">Подключение динамиков</td>
+</tr>
+<tr>
+<td style="text-align:left">33</td>
+<td style="text-align:left">Нейлоновые стойки «мама-папа» М3×12 мм + винты + кольца</td>
+<td style="text-align:left">4 компл.</td>
+<td style="text-align:left">Крепление JAB4</td>
+</tr>
+<tr>
+<td style="text-align:left">34</td>
+<td style="text-align:left">Экранированный микрофонный кабель (2 жилы + оплётка)</td>
+<td style="text-align:left">0.5 м</td>
+<td style="text-align:left">На потенциометр</td>
+</tr>
+<tr>
+<td style="text-align:left">35</td>
+<td style="text-align:left">Сетка стекловолоконная защитная</td>
+<td style="text-align:left">1 упак.</td>
+<td style="text-align:left">Вентиляция</td>
+</tr>
+<tr>
+<td style="text-align:left">36</td>
+<td style="text-align:left">Гибкий провод 0.75 мм² с клеммами, L=160 мм</td>
+<td style="text-align:left">1 шт.</td>
+<td style="text-align:left">Кабельный мост экрана задней панели</td>
+</tr>
+<tr>
+<td style="text-align:left">37</td>
+<td style="text-align:left">Нейлоновый винт М3×12 + латунная шайба + латунная гайка М3</td>
+<td style="text-align:left">1 компл.</td>
+<td style="text-align:left">Узел контакта экрана задней панели</td>
+</tr>
+<tr>
+<td style="text-align:left">38</td>
+<td style="text-align:left">Авторазъём «папа-мама» ножевой, изолированный</td>
+<td style="text-align:left">3 шт.</td>
+<td style="text-align:left">Экран задней панели + провода C8 + AUX</td>
+</tr>
+<tr>
+<td style="text-align:left">39</td>
+<td style="text-align:left">Металлорукав (экран) + термоусадка для силового кабеля</td>
+<td style="text-align:left">~0.5 м</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">40</td>
+<td style="text-align:left">Провода, кабели, термоусадки, эпоксидный клей, тех. вазелин</td>
+<td style="text-align:left">компл.</td>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="6-пошаговая-инструкция-по-сборке">6. ПОШАГОВАЯ ИНСТРУКЦИЯ ПО СБОРКЕ</h2>
+<h3 id="этап-1-подготовка-деталей">ЭТАП 1. ПОДГОТОВКА ДЕТАЛЕЙ</h3>
+<ol>
+<li>Распил ЛДСП/ЛМДФ по таблице 4.1. Задняя панель — ABS 5 мм.</li>
+<li>Оклейка кромок утюгом (белая / «бук»).</li>
+<li>Сверление отверстий:
+<ul>
+<li><strong>Передняя панель:</strong> НЧ ∅146, твитеры ∅49, 8 отв. ∅4.2.</li>
+<li><strong>Верхняя панель:</strong> карман ∅30×11 мм, отв. ∅7 мм (X=175, Y=45).</li>
+<li><strong>Задняя панель:</strong> окно C8, отв. ∅12 (селектор), ∅6 (3.5 мм), вентиляция, 6 отв. ∅4.2.</li>
+<li><strong>Боковая правая:</strong> карман 11–12 мм, окно C8.</li>
+<li><strong>Дно:</strong> 8 отв. ∅8 (вентиляция).</li>
+<li><strong>Перегородка:</strong> отв. для проводов ∅8, ∅6.</li>
+</ul>
+</li>
+<li>Установка втулок М4 в торцы (эпоксидный клей).</li>
+<li>Установка втулок М3 под уголки, стойки.</li>
+<li><strong>Экранирование:</strong>
+<ul>
+<li>Перегородку (со стороны электроники), заднюю панель изнутри и узкие полосы вдоль стыков оклеить <strong>самоклеящейся медной лентой</strong>.</li>
+<li>На верхней панели оставить радиопрозрачное окно 50×50 мм.</li>
+<li>В углах отсека электроники установить <strong>алюминиевые шины</strong> (уголки 15×15 мм), стыкуя их «в ус». Под шины проложить <strong>неклеевую медную фольгу</strong> и нанести тонкий слой технического вазелина. Притянуть шины <strong>саморезами 3.5×12 мм</strong> к ЛДСП.</li>
+</ul>
+</li>
+</ol>
+<h3 id="этап-2-сборка-короба-уголки-без-клея">ЭТАП 2. СБОРКА КОРОБА (УГОЛКИ, БЕЗ КЛЕЯ)</h3>
+<ol>
+<li>Крепление перегородки к дну (2 нижних стальных уголка, EVA-лента). Использовать <strong>саморезы 3.5×12 мм</strong>.</li>
+<li>Крепление боковин к дну (по 2 стальных уголка с каждой стороны, EVA-лента).</li>
+<li>Крепление перегородки к боковинам (4 стальных уголка, EVA-лента).</li>
+<li>Установка верхней панели (стальные уголки, EVA-лента).</li>
+</ol>
+<h3 id="этап-3-монтаж-электроники">ЭТАП 3. МОНТАЖ ЭЛЕКТРОНИКИ</h3>
+<ol>
+<li><strong>Усилитель JAB4:</strong> закрепить на перегородке через нейлоновые стойки М3×12 мм с силиконовыми кольцами и нейлоновыми винтами М3×8 мм.</li>
+<li><strong>Блок питания:</strong> закрепить на дне через диэлектрическую прокладку винтами М3×10 к втулкам М3.</li>
+<li><strong>Силовая часть:</strong>
+<ul>
+<li>Задний C8 и боковой C8 подключить к тумблеру-селектору ON-ON.</li>
+<li>С выхода селектора — <strong>предохранитель T 2.5 A</strong> → <strong>NTC-термистор 5D-15</strong> → главный тумблер ON-OFF на верхней панели → БП.</li>
+<li><strong>Варистор 10D471K</strong> припаять к клеммам БП.</li>
+<li>Силовой кабель к верхнему тумблеру: скрутить в витую пару, надеть термоусадку, затем металлорукав, затем ещё термоусадку. Заземлить рукав <strong>с одного конца</strong> на V- БП.</li>
+</ul>
+</li>
+<li><strong>Сигнальная часть:</strong>
+<ul>
+<li>Гнездо 3.5 мм → <strong>PolySwitch 0.1 А</strong> (в разрыв GND) → экранированный микрофонный кабель → быстросъёмный разъём → вход AUX на JAB4.</li>
+<li>Оплётка аудиокабеля изолирована от медного экрана корпуса.</li>
+</ul>
+</li>
+<li><strong>Выходы на динамики:</strong> от JAB4 вывести скрученные провода через перегородку (отверстия герметизировать).</li>
+<li><strong>Потенциометр громкости:</strong> подключить экранированным микрофонным кабелем к JAB4. Корпус заземлить отдельно.</li>
+<li><strong>Заземление:</strong> все экраны и общий минус (V- БП) соединить по топологии «звезда» в одной точке.</li>
+</ol>
+<h3 id="этап-4-задняя-и-передняя-панели">ЭТАП 4. ЗАДНЯЯ И ПЕРЕДНЯЯ ПАНЕЛИ</h3>
+<ol>
+<li><strong>Задняя панель:</strong>
+<ul>
+<li>На торец короба наклеить EVA-ленту 10×2 мм.</li>
+<li>Подключить <strong>кабельный мост</strong> экрана (нейлоновый винт М3×12, латунная шайба, кольцевая клемма, латунная гайка М3) и разъёмы AUX/питания.</li>
+<li>Защёлкнуть авторазъёмы «папа-мама».</li>
+<li>Притянуть панель <strong>винтами М4×20 с потайной головкой</strong> в резьбовые втулки М4.</li>
+</ul>
+</li>
+<li><strong>Передняя панель (пустая):</strong>
+<ul>
+<li>На передний торец наклеить EVA-ленту.</li>
+<li>Притянуть панель <strong>винтами М4×20 с потайной головкой</strong> во втулки М4.</li>
+</ul>
+</li>
+</ol>
+<h3 id="этап-5-динамики-и-синтепон">ЭТАП 5. ДИНАМИКИ И СИНТЕПОН</h3>
+<ol>
+<li>Через отверстия динамиков уложить и закрепить матерчатые подушки с синтепоном.</li>
+<li>Установить клеммники WAGO, подключить провода от усилителя и «хвосты» динамиков.</li>
+<li>Вставить динамики, закрепить штатными винтами, использовать штатные уплотнительные прокладки.</li>
+</ol>
+<h3 id="этап-6-финал">ЭТАП 6. ФИНАЛ</h3>
+<ol>
+<li>Изготовить П-образную рамку (рейки 5×20 мм) с тканью, закрепить на магниты и полкодержатели.</li>
+<li>Наклеить силиконовые ножки на дно.</li>
+<li>Настроить DSP (см. раздел 8).</li>
+</ol>
+<hr>
+<h2 id="7-первый-запуск-и-проверка">7. ПЕРВЫЙ ЗАПУСК И ПРОВЕРКА</h2>
+<h3 id="шаг-1-визуальный-контроль-и-прозвонка-питание-выключено">Шаг 1. Визуальный контроль и «прозвонка» (питание выключено)</h3>
+<ul>
+<li>Проверить цепь 220 В: мультиметр в режиме прозвонки. Измерить сопротивление между L и N на любом из разъёмов C8 при включенном главном тумблере и селекторе в соответствующем положении. Короткого замыкания быть не должно.</li>
+<li>Проверить изоляцию экранов: прозвонить корпус БП и медный экран на предмет контакта с сигнальными проводами. Корпус потенциометра должен звониться на экран корпуса, но его контакты — не должны.</li>
+<li>Контроль полярности 24 В: убедиться, что провод от V+ БП идёт на + JAB4, а V- — на GND.</li>
+</ul>
+<h3 id="шаг-2-проверка-блока-питания-усилитель-отключен">Шаг 2. Проверка блока питания (усилитель отключен)</h3>
+<ul>
+<li>Извлечь разъём питания 24 В из JAB4.</li>
+<li>Вставить сетевой кабель, включить главный тумблер. На БП должен загореться зелёный светодиод. Если слышен треск или светодиод мигает — немедленно выключить.</li>
+<li>Мультиметром измерить напряжение на выходе БП (V+ и V-). Подстроечным резистором +V ADJ выставить ровно <strong>24.0 В</strong>.</li>
+</ul>
+<h3 id="шаг-3-первое-включение-jab4-без-динамиков">Шаг 3. Первое включение JAB4 без динамиков</h3>
+<ul>
+<li>Обесточить систему, подождать 1–2 минуты.</li>
+<li>Подсоединить разъём 24 В к JAB4. Шлейф потенциометра должен быть подключен, кабели динамиков отсоединены.</li>
+<li>Подать питание. На JAB4 должны загореться индикаторы питания и статуса Bluetooth.</li>
+<li>Через 2–3 минуты проверить нагрев радиатора JAB4 и чипа ADAU1701 — они должны быть едва тёплыми. Если плата раскаляется — выключить.</li>
+</ul>
+<h3 id="шаг-4-проверка-выходов-на-отсутствие-постоянного-тока">Шаг 4. Проверка выходов на отсутствие постоянного тока</h3>
+<ul>
+<li>Мультиметр в режим DC (предел 2 В или 200 мВ).</li>
+<li>Замерить напряжение на каждом из 4 выходов для динамиков (между + и -).</li>
+<li>Допустимое значение — не более 10–30 мВ. Если ≥1 В — плата неисправна, динамики подключать нельзя.</li>
+</ul>
+<h3 id="шаг-5-финальное-подключение-и-тест-звука">Шаг 5. Финальное подключение и тест звука</h3>
+<ul>
+<li>Выключить питание.</li>
+<li>Подключить клеммники WAGO с проводами динамиков к выходам JAB4.</li>
+<li>Включить систему. В динамиках должна быть тишина.</li>
+<li>Подключить источник (Bluetooth или AUX), выставить минимальную громкость, плавно прибавить звук.</li>
+</ul>
+<hr>
+<h2 id="8-настройка-dsp-sigmastudio">8. НАСТРОЙКА DSP (SIGMASTUDIO)</h2>
+<h3 id="81-установка-и-подключение">8.1. Установка и подключение</h3>
+<ul>
+<li>Скачать и установить SigmaStudio с сайта Analog Devices.</li>
+<li>Подключить плату JAB4 к компьютеру через программатор ICP3/USBi.</li>
+</ul>
+<h3 id="82-базовый-проект-21">8.2. Базовый проект (2.1)</h3>
+<ul>
+<li>Входы: ADC0 и ADC1 (аналоговые).</li>
+<li><strong>Каналы L/R (твитеры):</strong> блок General 2nd Order Filter (High-Pass, 2.8 кГц, порядок 2–4). Усиление: <strong>−8 дБ</strong>.</li>
+<li><strong>Канал SUB (НЧ):</strong> сумматор L+R → блок General 2nd Order Filter (Low-Pass, 2.8 кГц, порядок 2–4).</li>
+<li><strong>Компенсация баффл-степа:</strong> Low Shelf Filter (+2…+3 дБ, 300 Гц, Q=0.7) на общий выход.</li>
+<li>Назначение потенциометра: блок Read Potentiometer (ADC0) → основной регулятор громкости.</li>
+<li>Записать схему в EEPROM платы.</li>
+</ul>
+<h3 id="83-коррекция-баса-для-компактного-зя">8.3. Коррекция баса для компактного ЗЯ</h3>
+<p>В канале SUB после сумматора и перед кроссовером добавить цепочку:</p>
+<ol>
+<li>
+<p><strong>Фильтр инфранизких частот (Subsonic Filter):</strong></p>
+<ul>
+<li>General 2nd Order Filter (High-Pass), Butterworth, 12 dB/oct, частота среза <strong>42 Гц</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Устранение резонансного горба (Parametric EQ):</strong></p>
+<ul>
+<li>Parametric EQ (1 полоса), Peaking, частота <strong>95 Гц</strong>, усиление <strong>−3.5 дБ</strong>, Q=<strong>1.3</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Компенсация спада баса (Linkwitz Transform / Low Shelf):</strong></p>
+<ul>
+<li>General 2nd Order Filter (Low Shelf), частота <strong>50 Гц</strong>, усиление <strong>+3 дБ</strong>, Q=<strong>0.7</strong>.</li>
+</ul>
+</li>
+</ol>
+<h3 id="84-предупреждение">8.4. Предупреждение</h3>
+<p>При первом прослушивании треков с мощным басом проверить ход диффузора Wavecor. Если ход становится неконтролируемым или слышны удары катушки, уменьшить усиление Low Shelf до +1.5 дБ или поднять частоту Subsonic Filter до 45 Гц.</p>
+<hr>
+<h2 id="9-заключение">9. ЗАКЛЮЧЕНИЕ</h2>
+<p>Проект «StereoRock 15 DSP» завершён. Версия 6.1 — это итог сотен часов обсуждений, расчётов и компромиссов. В нём учтены все аспекты: акустика, схемотехника, экранирование, технологичность сборки и ремонтопригодность. Документация полностью автономна и готова к передаче в цех и к закупке компонентов. Удачи в сборке и чистого звука!</p>
+
+            
+            
+        </body>
+        </html>
