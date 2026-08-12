@@ -2,7 +2,7 @@
         <html>
         <head>
             <meta charset="UTF-8">
-            <title>&#x1f3b8; &Pcy;&rcy;&ocy;&iecy;&kcy;&tcy; &laquo;StereoRock 15 DSP&raquo; &mdash; &fcy;&icy;&ncy;&acy;&lcy;&softcy;&ncy;&acy;&yacy; &dcy;&ocy;&kcy;&ucy;&mcy;&iecy;&ncy;&tcy;&acy;&tscy;&icy;&yacy; &lpar;&vcy;&iecy;&rcy;&scy;&icy;&yacy; 6&period;8&rpar;</title>
+            <title>&#x1f3b8; &Pcy;&rcy;&ocy;&iecy;&kcy;&tcy; &laquo;StereoRock 15 DSP&raquo; &mdash; &fcy;&icy;&ncy;&acy;&lcy;&softcy;&ncy;&acy;&yacy; &dcy;&ocy;&kcy;&ucy;&mcy;&iecy;&ncy;&tcy;&acy;&tscy;&icy;&yacy; &lpar;&vcy;&iecy;&rcy;&scy;&icy;&yacy; 6&period;15&rpar;</title>
             <style>
 /* From extension vscode.github */
 /*---------------------------------------------------------------------------------------------
@@ -139,11 +139,11 @@
         </head>
         <body class="vscode-body vscode-light">
             <span id="markdown-mermaid" aria-hidden="true" data-config="{&quot;darkModeTheme&quot;:&quot;vscode&quot;,&quot;lightModeTheme&quot;:&quot;vscode&quot;,&quot;maxTextSize&quot;:50000,&quot;clickDrag&quot;:&quot;alt&quot;,&quot;showControls&quot;:&quot;onHoverOrFocus&quot;,&quot;resizable&quot;:true,&quot;maxHeight&quot;:&quot;&quot;}"></span>
-				<p>Мы возвращаемся к надёжному креплению платы JAB4 на перегородке через сайлентблоки. Ниже — полностью автономная версия 6.8, в которой устранено противоречие с габаритами, а все элементы (плата, провода, экраны, регуляторы, антенна) проверены на совместимость.</p>
+				<p>Ниже — полностью автономная, самодостаточная финальная документация проекта «StereoRock 15 DSP», версия 6.15. В нее включены все последние решения и правки, включая финальный узел виброизолированного подвеса платы JAB4 на поликарбонатной рамке с двойным каскадом резиновых гумми-втулок, угловой гермоввод PG13.5 для прохода акустических проводов, герметизация ППУ-лентой, фоамирановыми прокладками и пластилином Stik‑o‑Seal с фиксацией малярным скотчем, гибкие паяные шлейфы для экранирования, снижение частоты раздела до 2500 Гц, опциональная внешняя антенна SMA, программные лимитеры, а также восстановленные разделы «Отвергнутые альтернативы» по всем ключевым решениям. Все буквы «ё» заменены на «е».</p>
 <hr>
-<h1 id="-проект-stereorock-15-dsp--финальная-документация-версия-68">🎸 Проект «StereoRock 15 DSP» — финальная документация (версия 6.8)</h1>
-<p><strong>Дата:</strong> 11.08.2026<br>
-<strong>Версия:</strong> 6.8 (итоговая, автономная, плата на перегородке, для заказа распила, закупки и сборки)<br>
+<h1 id="-проект-stereorock-15-dsp--финальная-документация-версия-615">🎸 Проект «StereoRock 15 DSP» — финальная документация (версия 6.15)</h1>
+<p><strong>Дата:</strong> 12.08.2026<br>
+<strong>Версия:</strong> 6.15 (итоговая, автономная, с герметизацией, угловым гермовводом и финальными ссылками, для заказа распила, закупки и сборки)<br>
 <strong>Авторы:</strong> Мастер и Инженер</p>
 <hr>
 <h2 id="1-концепция-и-принципиальные-решения">1. КОНЦЕПЦИЯ И ПРИНЦИПИАЛЬНЫЕ РЕШЕНИЯ</h2>
@@ -165,9 +165,9 @@
 <li><strong>НЧ/СЧ-динамик: Wavecor WF168OM01</strong> (6.5″, 4 Ом, 88 дБ). Бумажный диффузор с пропиткой, натуральная середина. Qts≈0.45, Vas≈29.5 л, Fs≈39 Гц. В ЗЯ 5.4 л дает упругий, панчевый бас.</li>
 <li><strong>Твитеры: Sica LP53x58.28/N20 TW</strong> (1″, 8 Ом, 95.8 дБ). Шелковый купол, закрытая задняя камера, неодимовый магнит с ферромагнитной жидкостью. Разница чувствительности (8 дБ) компенсируется в DSP.</li>
 </ul>
-<p><strong>Отвергнутые альтернативы:</strong> Monacor SPH‑170, Visaton W 170 S, Peerless SDS, Vifa BC25SC06‑04, Peerless DX25TG59‑04 (заменены по доступности/цене).</p>
+<p><strong>Отвергнутые альтернативы:</strong> Monacor SPH‑170 (исчез из продажи), Visaton W 170 S (труднодоступен), Peerless SDS (периодически пропадает), Vifa BC25SC06‑04 и Peerless DX25TG59‑04 (заменены на Sica по доступности/цене).</p>
 <h3 id="13-усилитель-и-dsp">1.3. Усилитель и DSP</h3>
-<p><strong>Wondom JAB4 (TPA3221 + ADAU1701).</strong> 4‑канальный усилитель класса D (2.1: стерео + мостовой сабвуфер). Встроенный DSP‑кроссовер (2.8 кГц), эквалайзер, компенсация баффл-степа и разницы чувствительности.</p>
+<p><strong>Wondom JAB4 (TPA3221 + ADAU1701).</strong> 4‑канальный усилитель класса D (2.1: стерео + мостовой сабвуфер). Встроенный DSP‑кроссовер (<strong>2500 Гц</strong>), эквалайзер, компенсация баффл-степа и разницы чувствительности.</p>
 <p><strong>Преимущества DSP:</strong></p>
 <ul>
 <li>Программная частота раздела, порядок фильтра, уровни.</li>
@@ -186,13 +186,13 @@
 <p><strong>Ключевые принципы:</strong></p>
 <ul>
 <li><strong>Полная разборность:</strong> корпус на уголках и винтах, без клея/герметика.</li>
-<li><strong>Герметизация:</strong> лента EVA 10×2 мм по всем стыкам.</li>
+<li><strong>Герметизация:</strong> лента ППУ 20×3 мм по всем стыкам, угловой гермоввод PG13.5 для проводов, фоамирановые прокладки динамиков, пластилин Stik‑o‑Seal с фиксацией малярным скотчем в углах.</li>
 <li><strong>Минимум видимого крепежа:</strong> винты утоплены, скрыты, или смонтированы изнутри. На верхней поверхности — ручка громкости и выключатель питания.</li>
 <li><strong>Тонкая кромка:</strong> меламин 0.5 мм (монтаж с утюгом), для деталей корпуса (кроме задней стенки).</li>
 </ul>
 <p><strong>Отвергнутые альтернативы:</strong> фазоинвертор (громоздкий), толстая кромка 2 мм (удорожание при заказе), задняя и верхняя панель из ЛДСП (проблема монтажа разъемов и регуляторов).</p>
 <h3 id="15-экранирование-и-заземление">1.5. Экранирование и заземление</h3>
-<p>Локальная «клетка Фарадея» в отсеке электроники. Медная лента на перегородке, задней панели и вдоль стыков. Алюминиевые шины в углах отсека для непрерывного контура. Защитная неклеевая медная фольга + технический вазелин в местах прижима шин. Заземление по топологии «звезда» с центром на V- блока питания. Контакт задней панели — через провод, закрепленный нейлоновым винтом и авторазъемом.</p>
+<p>Локальная «клетка Фарадея» в отсеке электроники. Медная лента на перегородке, задней панели и всех плоскостях отсека. Гибкие паяные шлейфы из медной плетенки ПМЛ соединяют панели в единый контур по топологии «звезда». Каждый шлейф фиксируется через многоразовый вибростойкий «сэндвич» (малая шайба + кольцевая клемма + широкая кузовная шайба), затянутый саморезом в нейлоновый дюбель. Это гарантирует надежный контакт без повреждения медного скотча при многократной разборке. Заземление по топологии «звезда» с центром на V- блока питания. Контакт задней панели — через провод, закрепленный нейлоновым винтом.</p>
 <p><strong>Сетевые провода:</strong> скручены, пропущены через ферритовое кольцо, экранированы металлорукавом с заземлением с одного конца.</p>
 <hr>
 <h2 id="2-технические-характеристики">2. ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</h2>
@@ -275,7 +275,7 @@
 <tr>
 <td style="text-align:left">Боковая левая</td>
 <td style="text-align:left">ЛДСП «бук» 16 мм</td>
-<td style="text-align:left">203 × <strong>220</strong></td>
+<td style="text-align:left"><strong>170</strong> × <strong>220</strong></td>
 <td style="text-align:left">1</td>
 <td style="text-align:left">Белая 0.5 мм по переднему и верхнему торцам</td>
 <td style="text-align:left">Выступает на 10 мм ниже дна (ножки)</td>
@@ -283,7 +283,7 @@
 <tr>
 <td style="text-align:left">Боковая правая</td>
 <td style="text-align:left">ЛДСП «бук» 16 мм</td>
-<td style="text-align:left">203 × <strong>220</strong></td>
+<td style="text-align:left"><strong>170</strong> × <strong>220</strong></td>
 <td style="text-align:left">1</td>
 <td style="text-align:left">Белая 0.5 мм по переднему и верхнему торцам</td>
 <td style="text-align:left"><strong>С карманом под боковой C8</strong></td>
@@ -291,15 +291,15 @@
 <tr>
 <td style="text-align:left">Дно</td>
 <td style="text-align:left">ЛДСП «бук» 16 мм</td>
-<td style="text-align:left"><strong>322</strong> × 203</td>
+<td style="text-align:left"><strong>322</strong> × <strong>170</strong></td>
 <td style="text-align:left">1</td>
 <td style="text-align:left">Белая 0.5 мм по переднему торцу</td>
-<td style="text-align:left">Вставляется между боковин</td>
+<td style="text-align:left">Вставляется между боковин. <strong>Центральная точка экрана</strong></td>
 </tr>
 <tr>
 <td style="text-align:left">Верхняя панель</td>
 <td style="text-align:left"><strong>ЛМДФ белый 16 мм</strong></td>
-<td style="text-align:left"><strong>354</strong> × 203</td>
+<td style="text-align:left"><strong>354</strong> × <strong>170</strong></td>
 <td style="text-align:left">1</td>
 <td style="text-align:left">Белая 0.5 мм по переднему и боковым торцам</td>
 <td style="text-align:left"><strong>Накладная</strong>, с фрезерованными карманами под регулятор громкости и выключатель</td>
@@ -326,7 +326,7 @@
 <td style="text-align:left"><strong>322</strong> × <strong>194</strong></td>
 <td style="text-align:left">1</td>
 <td style="text-align:left">Тонкая (0.5 мм) по периметру</td>
-<td style="text-align:left"><strong>На ней крепится плата JAB4</strong></td>
+<td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
@@ -349,7 +349,7 @@
 </ul>
 </li>
 <li>Оба элемента находятся на одной линии (Y=170 мм) над отсеком электроники, не нарушая герметичности акустического отсека. Рекомендуется установить их на панель до монтажа панели на короб.</li>
-<li><strong>Радиопрозрачное окно Bluetooth:</strong> в медном экране верхней панели оставляется неоклеенный участок 50×50 мм, центр которого находится на X=<strong>175 мм</strong>, Y=<strong>143 мм</strong> (над антенной JAB4 на перегородке).</li>
+<li><strong>Радиопрозрачное окно Bluetooth:</strong> в медном экране верхней панели оставляется неоклеенный участок 50×50 мм, центр которого находится на X=<strong>175 мм</strong>, Y=<strong>143 мм</strong> (над антенной JAB4 на рамке).</li>
 </ul>
 <h3 id="43-задняя-панель-abs-5-мм">4.3. Задняя панель (ABS 5 мм)</h3>
 <ul>
@@ -370,14 +370,8 @@
 <li>Координаты центра окна: высота <strong>100 мм</strong> от нижнего края, глубина <strong>25 мм</strong> от заднего края.</li>
 <li>Карман после монтажа заклеивается медным скотчем внахлест с экраном боковины.</li>
 </ul>
-<h3 id="45-перегородка-лдсп-16-мм--крепление-платы-jab4">4.5. Перегородка (ЛДСП 16 мм) — крепление платы JAB4</h3>
-<ul>
-<li>На стороне, обращенной в отсек электроники, сверлятся 4 глухих отверстия ∅4.5–5 мм, глубиной 10–12 мм под резьбовые втулки М3 для сайлентблоков.</li>
-<li>Координаты отверстий определяются по монтажным отверстиям платы JAB4. Плата ориентируется антенной вверх, компонентами внутрь отсека электроники.</li>
-<li>Расстояние от верхнего края платы до верхней панели: <strong>35 мм</strong>.</li>
-<li>Расстояние от заднего края платы до внутренней поверхности задней панели: ~20 мм.</li>
-<li>Плата крепится на сайлентблоках (виброопорах) М3 с нейлоновыми шайбами и латунными гайками, обеспечивая зазор ~10 мм от перегородки и надежную виброразвязку.</li>
-</ul>
+<h3 id="45-узел-виброизолированного-подвеса-платы-jab4-поликарбонатная-рамка">4.5. Узел виброизолированного подвеса платы JAB4 (Поликарбонатная рамка)</h3>
+<p>Плата Wondom JAB4 крепится не к перегородке, а на специальную поликарбонатную рамку, подвешенную к верхней и нижней панелям корпуса через алюминиевые уголки и резиновые гумми-втулки. Полное описание узла и спецификация приведены в <strong>Разделе 5</strong>. Данное решение обеспечивает надежную виброизоляцию, отличное охлаждение и удобный доступ для обслуживания.</p>
 <h3 id="46-передняя-панель-лдсп-бук-16-мм">4.6. Передняя панель (ЛДСП «бук» 16 мм)</h3>
 <ul>
 <li>Отверстия под динамики:
@@ -389,6 +383,12 @@
 </li>
 <li>Крепежные отверстия: 8 шт. ∅4.2 мм под винты М4×20 с потайной головкой.</li>
 </ul>
+<h3 id="47-перегородка--гермоввод">4.7. Перегородка — гермоввод</h3>
+<ul>
+<li>В нижней трети перегородки, отступив 45–50 мм от левой стенки и 40 мм от дна, сверлится отверстие для установки <strong>углового гермоввода PG13.5</strong>.</li>
+<li>Гермоввод крепится фланцем со стороны акустического отсека на саморезы с пластиковыми дюбелями через прокладку из ППУ-ленты (или родную резиновую).</li>
+<li>Носик гермоввода ориентируется <strong>вертикально вверх</strong> (или горизонтально вправо) для удобной прокладки жгута акустических проводов.</li>
+</ul>
 <hr>
 <h2 id="5-полная-спецификация-компонентов">5. ПОЛНАЯ СПЕЦИФИКАЦИЯ КОМПОНЕНТОВ</h2>
 <table>
@@ -398,6 +398,8 @@
 <th style="text-align:left">Наименование</th>
 <th style="text-align:left">Кол‑во</th>
 <th style="text-align:left">Примечание</th>
+<th style="text-align:left">Ссылка / Источник</th>
+<th style="text-align:left">Цена (ориентир)</th>
 </tr>
 </thead>
 <tbody>
@@ -406,270 +408,456 @@
 <td style="text-align:left">НЧ‑динамик Wavecor WF168OM01 (6.5″, 4 Ом)</td>
 <td style="text-align:left">1</td>
 <td style="text-align:left"></td>
+<td style="text-align:left"><a href="https://www.audiomania.ru/">Аудиомания</a></td>
+<td style="text-align:left">4 658 ₽</td>
 </tr>
 <tr>
 <td style="text-align:left">2</td>
 <td style="text-align:left">Твитер Sica LP53x58.28/N20 TW (1″, 8 Ом)</td>
 <td style="text-align:left">2</td>
 <td style="text-align:left"></td>
+<td style="text-align:left"><a href="https://www.audiomania.ru/">Аудиомания</a></td>
+<td style="text-align:left">3 534 ₽/шт.</td>
 </tr>
 <tr>
 <td style="text-align:left">3</td>
 <td style="text-align:left">DSP‑усилитель Wondom JAB4</td>
 <td style="text-align:left">1</td>
 <td style="text-align:left"></td>
+<td style="text-align:left"><a href="https://www.aliexpress.com/">AliExpress</a></td>
+<td style="text-align:left">~2 500–3 500 ₽</td>
 </tr>
 <tr>
 <td style="text-align:left">4</td>
 <td style="text-align:left">Программатор ICP3 / USBi</td>
 <td style="text-align:left">1</td>
 <td style="text-align:left"></td>
+<td style="text-align:left"><a href="https://www.aliexpress.com/">AliExpress</a></td>
+<td style="text-align:left">~1 000–1 500 ₽</td>
 </tr>
 <tr>
 <td style="text-align:left">5</td>
 <td style="text-align:left">БП Mean Well LRS‑100‑24</td>
 <td style="text-align:left">1</td>
 <td style="text-align:left"></td>
+<td style="text-align:left"><a href="https://www.ozon.ru/">Ozon</a></td>
+<td style="text-align:left">~1 500–2 000 ₽</td>
 </tr>
 <tr>
 <td style="text-align:left">6</td>
 <td style="text-align:left">Потенциометр 10 кОм линейный</td>
 <td style="text-align:left">1</td>
 <td style="text-align:left">Регулятор громкости на верхней панели</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">~150–250 ₽</td>
 </tr>
 <tr>
 <td style="text-align:left">7</td>
 <td style="text-align:left">Тумблер ON‑OFF (главный выключатель) 250 В / 6 А</td>
 <td style="text-align:left">1</td>
 <td style="text-align:left">На верхней панели</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">~200–300 ₽</td>
 </tr>
 <tr>
 <td style="text-align:left">8</td>
 <td style="text-align:left">Тумблер ON‑ON (селектор входов) 250 В / 6 А</td>
 <td style="text-align:left">1</td>
 <td style="text-align:left">На задней панели</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">~200–300 ₽</td>
 </tr>
 <tr>
 <td style="text-align:left">9</td>
 <td style="text-align:left">Разъем C8 «восьмерка» с крепежными ушками</td>
 <td style="text-align:left">2</td>
 <td style="text-align:left">Задний + боковой</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">~100–150 ₽/шт.</td>
 </tr>
 <tr>
 <td style="text-align:left">10</td>
 <td style="text-align:left">Предохранитель T 2.5 А (5×20 мм) + держатель</td>
 <td style="text-align:left">1</td>
 <td style="text-align:left">В разрыв L перед селектором</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">~100–150 ₽</td>
 </tr>
 <tr>
 <td style="text-align:left">11</td>
 <td style="text-align:left">NTC‑термистор 5D‑15 (5 Ом)</td>
 <td style="text-align:left">1</td>
 <td style="text-align:left">В разрыв L перед БП</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">~50–80 ₽</td>
 </tr>
 <tr>
 <td style="text-align:left">12</td>
 <td style="text-align:left">Варистор 10D471K</td>
 <td style="text-align:left">1</td>
 <td style="text-align:left">На клеммах БП</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">~30–50 ₽</td>
 </tr>
 <tr>
 <td style="text-align:left">13</td>
 <td style="text-align:left">Самовосст. предохранитель PolySwitch 0.1 А (100 мА)</td>
 <td style="text-align:left">1</td>
 <td style="text-align:left">В разрыв GND аудиокабеля (защита входа DSP)</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">~50–80 ₽</td>
 </tr>
 <tr>
 <td style="text-align:left">14</td>
 <td style="text-align:left">Акустический синтепон (негорючий) 50 г</td>
 <td style="text-align:left">1</td>
 <td style="text-align:left">В матерчатых подушках</td>
+<td style="text-align:left">Швейный магазин / Ozon</td>
+<td style="text-align:left">~100–150 ₽</td>
 </tr>
 <tr>
 <td style="text-align:left">15</td>
 <td style="text-align:left">Токопроводящая EMI‑прокладка</td>
 <td style="text-align:left">0.5 м</td>
 <td style="text-align:left">Для задней панели</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">~300–400 ₽</td>
 </tr>
 <tr>
 <td style="text-align:left">16</td>
 <td style="text-align:left">Ферритовое кольцо clip‑on (∅5–7 мм)</td>
 <td style="text-align:left">2</td>
 <td style="text-align:left">На силовых проводах</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">~50–80 ₽/шт.</td>
 </tr>
 <tr>
 <td style="text-align:left">17</td>
 <td style="text-align:left">ЛДСП 16 мм «бук», распил</td>
 <td style="text-align:left">1 компл.</td>
 <td style="text-align:left"></td>
+<td style="text-align:left">Местная мастерская</td>
+<td style="text-align:left">~1 500–2 500 ₽</td>
 </tr>
 <tr>
 <td style="text-align:left">18</td>
-<td style="text-align:left">ЛМДФ 16 мм белый платиновый, 354×203 мм</td>
+<td style="text-align:left">ЛМДФ 16 мм белый платиновый, 354×170 мм</td>
 <td style="text-align:left">1</td>
 <td style="text-align:left">Верхняя панель</td>
+<td style="text-align:left">Местная мастерская / Ozon</td>
+<td style="text-align:left">~400–600 ₽</td>
 </tr>
 <tr>
 <td style="text-align:left">19</td>
 <td style="text-align:left">ABS-пластик 5 мм белый глянцевый, 354×222 мм</td>
 <td style="text-align:left">1</td>
 <td style="text-align:left">Задняя панель</td>
+<td style="text-align:left"><a href="https://www.ozon.ru/">Ozon</a></td>
+<td style="text-align:left">~400–600 ₽</td>
 </tr>
 <tr>
 <td style="text-align:left">20</td>
 <td style="text-align:left">Медная самоклеящаяся лента 20–30 мм</td>
 <td style="text-align:left">1 рулон</td>
 <td style="text-align:left">Основной экран</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">~400–700 ₽</td>
 </tr>
 <tr>
 <td style="text-align:left">21</td>
-<td style="text-align:left">Медная неклеевая фольга 0.1 мм (полосы 20–25 мм)</td>
+<td style="text-align:left">Медная плетенка ПМЛ 2×4 мм² (шлейфы)</td>
 <td style="text-align:left">~1 м</td>
-<td style="text-align:left">Защитный слой под алюминиевые шины</td>
+<td style="text-align:left">Экранирующие перемычки</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">~200–300 ₽</td>
 </tr>
 <tr>
 <td style="text-align:left">22</td>
-<td style="text-align:left">Кромка меламиновая 0.5 мм (белая, «бук»)</td>
-<td style="text-align:left">~5 м</td>
-<td style="text-align:left"></td>
+<td style="text-align:left">Кольцевые клеммы под винт М4</td>
+<td style="text-align:left">10 шт.</td>
+<td style="text-align:left">Для шлейфов</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">~50–80 ₽/упак.</td>
 </tr>
 <tr>
 <td style="text-align:left">23</td>
-<td style="text-align:left">Лента EVA 10×2 мм, черная</td>
-<td style="text-align:left">~3 м</td>
-<td style="text-align:left">Герметизация стыков</td>
+<td style="text-align:left">Шайбы кузовные DIN 9021, М4 (внешний ∅12 мм)</td>
+<td style="text-align:left">10 шт.</td>
+<td style="text-align:left">Нижняя шайба «сэндвича»</td>
+<td style="text-align:left">Строймаркет / Ozon</td>
+<td style="text-align:left">~50–80 ₽/упак.</td>
 </tr>
 <tr>
 <td style="text-align:left">24</td>
-<td style="text-align:left">Резьбовые втулки М4</td>
-<td style="text-align:left">14 шт.</td>
-<td style="text-align:left">Для крепления передней и задней панелей в торец ЛДСП</td>
+<td style="text-align:left">Шайбы плоские DIN 125, М4</td>
+<td style="text-align:left">10 шт.</td>
+<td style="text-align:left">Верхняя шайба «сэндвича»</td>
+<td style="text-align:left">Строймаркет / Ozon</td>
+<td style="text-align:left">~30–50 ₽/упак.</td>
 </tr>
 <tr>
 <td style="text-align:left">25</td>
-<td style="text-align:left">Резьбовые втулки М3</td>
-<td style="text-align:left">14 шт.</td>
-<td style="text-align:left">Для уголков, БП, сайлентблоков</td>
+<td style="text-align:left">Нейлоновые дюбели Fischer SX ∅4 мм</td>
+<td style="text-align:left">10 шт.</td>
+<td style="text-align:left">Многоразовая гильза в ЛДСП</td>
+<td style="text-align:left">Строймаркет / Ozon</td>
+<td style="text-align:left">~100–150 ₽/упак.</td>
 </tr>
 <tr>
 <td style="text-align:left">26</td>
-<td style="text-align:left">Уголки мебельные 15×15 мм, стальные</td>
-<td style="text-align:left">20 шт.</td>
-<td style="text-align:left">Силовой каркас корпуса</td>
+<td style="text-align:left">Тканевая ворсистая изолента (Tesa 51608)</td>
+<td style="text-align:left">~1 м</td>
+<td style="text-align:left">Виброизоляция шлейфов</td>
+<td style="text-align:left">Автомагазин / Ozon</td>
+<td style="text-align:left">~150–200 ₽</td>
 </tr>
 <tr>
 <td style="text-align:left">27</td>
-<td style="text-align:left">Уголки алюминиевые 15×15 мм (шины экранирования)</td>
-<td style="text-align:left">~2 м</td>
+<td style="text-align:left">Кромка меламиновая 0.5 мм (белая, «бук»)</td>
+<td style="text-align:left">~5 м</td>
 <td style="text-align:left"></td>
+<td style="text-align:left">Строймаркет / Ozon</td>
+<td style="text-align:left">~150–250 ₽</td>
 </tr>
 <tr>
 <td style="text-align:left">28</td>
-<td style="text-align:left">Саморезы 3.5×12 мм (пресс‑шайба)</td>
-<td style="text-align:left">50 шт.</td>
-<td style="text-align:left">Крепеж стальных уголков к ЛДСП</td>
+<td style="text-align:left">Лента ППУ 20×3 мм (самоклеящаяся)</td>
+<td style="text-align:left">~3 м</td>
+<td style="text-align:left">Герметизация стыков</td>
+<td style="text-align:left">Строймаркет / Ozon</td>
+<td style="text-align:left">~250–400 ₽</td>
 </tr>
 <tr>
 <td style="text-align:left">29</td>
-<td style="text-align:left">Винты М4×20 с потайной головкой</td>
+<td style="text-align:left">Резьбовые втулки М4</td>
 <td style="text-align:left">14 шт.</td>
-<td style="text-align:left">Передняя и задняя панели</td>
+<td style="text-align:left">Для крепления передней и задней панелей в торец ЛДСП</td>
+<td style="text-align:left">Строймаркет / Ozon</td>
+<td style="text-align:left">~100–150 ₽/упак.</td>
 </tr>
 <tr>
 <td style="text-align:left">30</td>
-<td style="text-align:left">Силиконовые ножки (4 шт.)</td>
-<td style="text-align:left">1 компл.</td>
-<td style="text-align:left"></td>
+<td style="text-align:left">Резьбовые втулки М3</td>
+<td style="text-align:left">10 шт.</td>
+<td style="text-align:left">Для уголков, БП</td>
+<td style="text-align:left">Строймаркет / Ozon</td>
+<td style="text-align:left">~100–150 ₽/упак.</td>
 </tr>
 <tr>
 <td style="text-align:left">31</td>
-<td style="text-align:left">Гнездо 3.5 мм стерео на панель (изолированное)</td>
-<td style="text-align:left">1</td>
-<td style="text-align:left"></td>
+<td style="text-align:left">Уголки мебельные 15×15 мм, стальные</td>
+<td style="text-align:left">20 шт.</td>
+<td style="text-align:left">Силовой каркас корпуса</td>
+<td style="text-align:left">Строймаркет / Ozon</td>
+<td style="text-align:left">~200–300 ₽/упак.</td>
 </tr>
 <tr>
 <td style="text-align:left">32</td>
-<td style="text-align:left">Клеммники WAGO 221 (2‑проводные)</td>
-<td style="text-align:left">4</td>
-<td style="text-align:left">Подключение динамиков</td>
+<td style="text-align:left">Саморезы 3.5×12 мм (пресс‑шайба)</td>
+<td style="text-align:left">50 шт.</td>
+<td style="text-align:left">Крепеж стальных уголков к ЛДСП</td>
+<td style="text-align:left">Строймаркет / Ozon</td>
+<td style="text-align:left">~100–150 ₽/упак.</td>
 </tr>
 <tr>
 <td style="text-align:left">33</td>
-<td style="text-align:left"><strong>Сайлентблоки (виброопоры) М3, диаметр 8–10 мм, высота 8–10 мм</strong></td>
-<td style="text-align:left">4 шт.</td>
-<td style="text-align:left">Виброразвязка платы JAB4</td>
+<td style="text-align:left">Винты М4×20 с потайной головкой</td>
+<td style="text-align:left">14 шт.</td>
+<td style="text-align:left">Передняя и задняя панели</td>
+<td style="text-align:left">Строймаркет / Ozon</td>
+<td style="text-align:left">~100–150 ₽/упак.</td>
 </tr>
 <tr>
 <td style="text-align:left">34</td>
-<td style="text-align:left"><strong>Нейлоновые шайбы М3</strong></td>
-<td style="text-align:left">8 шт.</td>
-<td style="text-align:left">Изоляция платы JAB4</td>
+<td style="text-align:left">Силиконовые ножки (4 шт.)</td>
+<td style="text-align:left">1 компл.</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">Строймаркет / Ozon</td>
+<td style="text-align:left">~100–150 ₽</td>
 </tr>
 <tr>
 <td style="text-align:left">35</td>
-<td style="text-align:left"><strong>Латунные гайки М3</strong></td>
-<td style="text-align:left">4 шт.</td>
-<td style="text-align:left">Крепление платы к сайлентблокам</td>
+<td style="text-align:left">Гнездо 3.5 мм стерео на панель (изолированное)</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left"></td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">~100–150 ₽</td>
 </tr>
 <tr>
 <td style="text-align:left">36</td>
-<td style="text-align:left">Экранированный микрофонный кабель (2 жилы + оплетка)</td>
-<td style="text-align:left">0.5 м</td>
-<td style="text-align:left">На потенциометр</td>
+<td style="text-align:left">Клеммники WAGO 221 (2‑проводные)</td>
+<td style="text-align:left">4</td>
+<td style="text-align:left">Подключение динамиков</td>
+<td style="text-align:left">Электротовары / Ozon</td>
+<td style="text-align:left">~200–300 ₽/упак.</td>
 </tr>
 <tr>
 <td style="text-align:left">37</td>
-<td style="text-align:left">Сетка стекловолоконная защитная</td>
-<td style="text-align:left">1 упак.</td>
-<td style="text-align:left">Вентиляция</td>
+<td style="text-align:left">Экранированный микрофонный кабель (2 жилы + оплетка)</td>
+<td style="text-align:left">0.5 м</td>
+<td style="text-align:left">На потенциометр</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">~100–150 ₽</td>
 </tr>
 <tr>
 <td style="text-align:left">38</td>
-<td style="text-align:left">Гибкий провод 0.75 мм² с клеммами, L=160 мм</td>
-<td style="text-align:left">1 шт.</td>
-<td style="text-align:left">Кабельный мост экрана задней панели</td>
+<td style="text-align:left">Сетка стекловолоконная защитная</td>
+<td style="text-align:left">1 упак.</td>
+<td style="text-align:left">Вентиляция</td>
+<td style="text-align:left">Строймаркет / Ozon</td>
+<td style="text-align:left">~100–150 ₽</td>
 </tr>
 <tr>
 <td style="text-align:left">39</td>
-<td style="text-align:left">Нейлоновый винт М3×12 + латунная шайба + латунная гайка М3</td>
-<td style="text-align:left">1 компл.</td>
-<td style="text-align:left">Узел контакта экрана задней панели</td>
+<td style="text-align:left">Гибкий провод 0.75 мм² с клеммами, L=160 мм</td>
+<td style="text-align:left">1 шт.</td>
+<td style="text-align:left">Кабельный мост экрана задней панели</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">~50–80 ₽</td>
 </tr>
 <tr>
 <td style="text-align:left">40</td>
-<td style="text-align:left">Авторазъем «папа-мама» ножевой, изолированный</td>
-<td style="text-align:left">3 шт.</td>
-<td style="text-align:left">Экран задней панели + провода C8 + AUX</td>
+<td style="text-align:left">Нейлоновый винт М3×12 + латунная шайба + латунная гайка М3</td>
+<td style="text-align:left">1 компл.</td>
+<td style="text-align:left">Узел контакта экрана задней панели</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">~50–80 ₽</td>
 </tr>
 <tr>
 <td style="text-align:left">41</td>
-<td style="text-align:left">Металлорукав (экран) + термоусадка для силового кабеля</td>
-<td style="text-align:left">~0.5 м</td>
-<td style="text-align:left"></td>
+<td style="text-align:left">Авторазъем «папа-мама» ножевой, изолированный</td>
+<td style="text-align:left">3 шт.</td>
+<td style="text-align:left">Экран задней панели + провода C8 + AUX</td>
+<td style="text-align:left">Автомагазин / Ozon</td>
+<td style="text-align:left">~100–150 ₽/упак.</td>
 </tr>
 <tr>
 <td style="text-align:left">42</td>
-<td style="text-align:left">Провода, кабели, термоусадки, эпоксидный клей, тех. вазелин</td>
-<td style="text-align:left">компл.</td>
+<td style="text-align:left">Металлорукав (экран) + термоусадка для силового кабеля</td>
+<td style="text-align:left">~0.5 м</td>
 <td style="text-align:left"></td>
+<td style="text-align:left">Электротовары / Ozon</td>
+<td style="text-align:left">~200–300 ₽</td>
 </tr>
 <tr>
 <td style="text-align:left">43</td>
-<td style="text-align:left">Самоклеящаяся уплотнительная лента EVA 5×1 мм</td>
-<td style="text-align:left">~1 м</td>
-<td style="text-align:left">Для НЧ-динамика (если нет штатной прокладки)</td>
+<td style="text-align:left">Провода, кабели, термоусадки, эпоксидный клей, тех. вазелин</td>
+<td style="text-align:left">компл.</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">~500–700 ₽</td>
 </tr>
 <tr>
 <td style="text-align:left">44</td>
-<td style="text-align:left">Автомобильный пластилин или кабельные втулки</td>
-<td style="text-align:left">компл.</td>
-<td style="text-align:left">Герметизация прохода проводов через перегородку</td>
+<td style="text-align:left">Фоамиран 1 мм, лист 60×70 см</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Прокладка для НЧ-динамика</td>
+<td style="text-align:left"><a href="https://ozon.ru/t/hivpsKR">Ozon</a></td>
+<td style="text-align:left">185 ₽</td>
 </tr>
 <tr>
 <td style="text-align:left">45</td>
-<td style="text-align:left"><strong>Разъем SMA + пигтейл U.FL → SMA (опционально)</strong></td>
+<td style="text-align:left">Гермоввод угловой PG13.5 (диаметр 6–12 мм)</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Герметичный ввод жгута динамиков</td>
+<td style="text-align:left"><a href="https://ozon.ru/t/wEIaq6Z">Ozon</a></td>
+<td style="text-align:left">250 ₽</td>
+</tr>
+<tr>
+<td style="text-align:left">46</td>
+<td style="text-align:left">Незасыхающий герметик-пластилин Stik‑o‑Seal</td>
+<td style="text-align:left">1 упак.</td>
+<td style="text-align:left">Герметизация углов короба</td>
+<td style="text-align:left">Строймаркет / Ozon</td>
+<td style="text-align:left">~200–300 ₽</td>
+</tr>
+<tr>
+<td style="text-align:left">47</td>
+<td style="text-align:left">Малярный скотч</td>
+<td style="text-align:left">1 рулон</td>
+<td style="text-align:left">Фиксация пластилина в углах</td>
+<td style="text-align:left">Строймаркет / Ozon</td>
+<td style="text-align:left">~50–80 ₽</td>
+</tr>
+<tr>
+<td style="text-align:left">48</td>
+<td style="text-align:left">Разъем SMA + пигтейл U.FL → SMA (опционально)</td>
 <td style="text-align:left">1 компл.</td>
 <td style="text-align:left">Внешняя антенна Bluetooth</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">~300–400 ₽</td>
+</tr>
+<tr>
+<td style="text-align:left">49</td>
+<td style="text-align:left"><strong>Поликарбонат монолитный 4 мм, заготовка ~110×150 мм</strong></td>
+<td style="text-align:left">1 шт.</td>
+<td style="text-align:left">Рамка для JAB4</td>
+<td style="text-align:left"><a href="https://ozon.ru/t/bTO5cUS">Ozon</a> (формат А4)</td>
+<td style="text-align:left">309 ₽</td>
+</tr>
+<tr>
+<td style="text-align:left">50</td>
+<td style="text-align:left"><strong>Уголок алюминиевый 15×15×1.5 мм, длина 500 мм</strong></td>
+<td style="text-align:left">1 шт.</td>
+<td style="text-align:left">Крепление рамки</td>
+<td style="text-align:left"><a href="https://ozon.ru/t/1fBvwG4">Ozon</a></td>
+<td style="text-align:left">209 ₽</td>
+</tr>
+<tr>
+<td style="text-align:left">51</td>
+<td style="text-align:left"><strong>Втулка резиновая проходная ∅7.0 мм / ∅4 мм</strong></td>
+<td style="text-align:left">10 шт.</td>
+<td style="text-align:left">Виброизоляция рамки</td>
+<td style="text-align:left"><a href="https://ozon.ru/t/v0ZYuTu">Ozon</a></td>
+<td style="text-align:left">350 ₽</td>
+</tr>
+<tr>
+<td style="text-align:left">52</td>
+<td style="text-align:left"><strong>Саморезы по дереву 3.5×16 мм с полукруглой головкой и пресс-шайбой</strong></td>
+<td style="text-align:left">4 шт.</td>
+<td style="text-align:left">Крепление уголков к корпусу</td>
+<td style="text-align:left">Строймаркет / Ozon</td>
+<td style="text-align:left">~50–80 ₽</td>
+</tr>
+<tr>
+<td style="text-align:left">53</td>
+<td style="text-align:left"><strong>Винты М3×10 мм с полукруглой головкой (крепление платы)</strong></td>
+<td style="text-align:left">4 шт.</td>
+<td style="text-align:left">Крепление платы к рамке</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">~50 ₽</td>
+</tr>
+<tr>
+<td style="text-align:left">54</td>
+<td style="text-align:left"><strong>Гайки М3 латунные</strong></td>
+<td style="text-align:left">4 шт.</td>
+<td style="text-align:left">Фиксация платы</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">копейки</td>
+</tr>
+<tr>
+<td style="text-align:left">55</td>
+<td style="text-align:left"><strong>Винты М3×10 мм с полукруглой головкой (крепление рамки)</strong></td>
+<td style="text-align:left">4 шт.</td>
+<td style="text-align:left">Крепление рамки к уголкам</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">~50 ₽</td>
+</tr>
+<tr>
+<td style="text-align:left">56</td>
+<td style="text-align:left"><strong>Нейлоновые шайбы М3</strong></td>
+<td style="text-align:left">4 шт.</td>
+<td style="text-align:left">Защита дорожек платы</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">копейки</td>
+</tr>
+<tr>
+<td style="text-align:left">57</td>
+<td style="text-align:left"><strong>Нейлоновые гайки М3</strong></td>
+<td style="text-align:left">4 шт.</td>
+<td style="text-align:left">Фиксация рамки к уголкам</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">копейки</td>
 </tr>
 </tbody>
 </table>
@@ -685,38 +873,40 @@
 <li><strong>Верхняя панель:</strong> карманы под регулятор (∅30×11 мм, отв. ∅7 мм, X=110, Y=170) и выключатель (∅20×10 мм, отв. ∅12 мм, X=50, Y=170). Тумблер и потенциометр рекомендуется установить на панель на этом этапе, припаяв к ним провода с запасом.</li>
 <li><strong>Задняя панель:</strong> окно C8, отв. ∅12 (селектор), ∅6 (3.5 мм), вентиляция, 6 отв. ∅4.2.</li>
 <li><strong>Боковая правая:</strong> карман 11–12 мм, окно C8.</li>
-<li><strong>Дно:</strong> 8 отв. ∅8 (вентиляция).</li>
-<li><strong>Перегородка:</strong> отв. для проводов ∅8, ∅6, а также 4 глухих отверстия ∅4.5–5 мм, глубиной 10–12 мм под сайлентблоки (по углам платы JAB4).</li>
+<li><strong>Дно:</strong> 8 отв. ∅8 (вентиляция), а также глухие отверстия ∅5 мм под нейлоновые дюбели для точек крепления шлейфов (см. п. 4.7).</li>
+<li><strong>Боковины, верхняя панель, перегородка:</strong> глухие отверстия ∅5 мм под нейлоновые дюбели для точек крепления шлейфов (см. п. 4.7).</li>
+<li><strong>Перегородка:</strong> отв. для установки углового гермоввода PG13.5 (см. п. 4.7).</li>
 </ul>
 </li>
 <li>Установка втулок М4 в торцы ЛДСП (эпоксидный клей).</li>
-<li>Установка втулок М3 под уголки, БП, сайлентблоки.</li>
+<li>Установка втулок М3 под уголки, БП.</li>
 <li><strong>Экранирование:</strong>
 <ul>
-<li>Перегородку (со стороны электроники), заднюю панель изнутри и узкие полосы вдоль стыков оклеить <strong>самоклеящейся медной лентой</strong>.</li>
-<li>На верхней панели оставить радиопрозрачное окно 50×50 мм с центром X=<strong>175 мм</strong>, Y=<strong>143 мм</strong>.</li>
-<li>На всех панелях, строго по линиям будущих алюминиевых шин, нанести полосы <strong>неклеевой медной фольги</strong> шириной 20–25 мм и покрыть их тонким слоем технического вазелина.</li>
-<li>Донную и верхнюю алюминиевые шины можно прикрепить к соответствующим панелям на этом этапе, чтобы упростить дальнейшую сборку. Боковые шины и шина на перегородке будут установлены позже, когда откроется удобный доступ.</li>
+<li>Перегородку (со стороны электроники), заднюю панель изнутри и все плоскости отсека электроники оклеить <strong>самоклеящейся медной лентой</strong>. На верхней панели оставить радиопрозрачное окно 50×50 мм с центром X=<strong>175 мм</strong>, Y=<strong>143 мм</strong>.</li>
+<li>В размеченных точках (п. 4.7) просверлить отверстия под дюбели прямо сквозь медную ленту. Аккуратно подрезать заусенцы фольги. Запрессовать нейлоновые дюбели заподлицо с поверхностью.</li>
+<li>Изготовить <strong>гибкие шлейфы</strong> из плетенки ПМЛ: отрезать 5 отрезков нужной длины, на концах обжать и пропаять кольцевые клеммы. Обмотать каждый шлейф тканевой изолентой.</li>
+<li>На каждом дюбеле собрать <strong>«сэндвич»</strong>: надеть на саморез малую шайбу (DIN 125), кольцевую клемму шлейфа, широкую кузовную шайбу (DIN 9021). Вставить саморез в дюбель и затянуть. Широкая шайба прижмет клемму к медному скотчу, не повреждая его.</li>
+<li>Соединить шлейфы по топологии «звезда»: все они сходятся к центральной точке на дне отсека электроники.</li>
 </ul>
 </li>
 </ol>
 <h3 id="этап-2-сборка-короба-уголки-без-клея">ЭТАП 2. СБОРКА КОРОБА (УГОЛКИ, БЕЗ КЛЕЯ)</h3>
 <ol>
-<li>Крепление перегородки к дну (2 нижних стальных уголка, EVA-лента). Использовать <strong>саморезы 3.5×12 мм</strong>.</li>
-<li>Крепление боковин к дну (по 2 стальных уголка с каждой стороны, EVA-лента). Рекомендуется наживить все уголки, проверить прямоугольность короба (промерять диагонали), затем затягивать крест-накрест.</li>
-<li><strong>Установка боковых шин и шины на перегородке (оптимальный момент):</strong> Пока верхняя панель отсутствует, обеспечивается отличный доступ ко всем внутренним поверхностям отсека. Прижмите левую и правую алюминиевые шины к боковинам, состыковав их нижние запилы «в ус» с донной шиной. Прижмите короткую шину к перегородке, также состыковав ее с донной шиной. Зафиксируйте все эти шины <strong>саморезами 3.5×12 мм</strong> с пресс-шайбой.</li>
-<li>Крепление перегородки к боковинам (4 стальных уголка, EVA-лента).</li>
-<li>Установка верхней панели (стальные уголки, EVA-лента). Верхняя алюминиевая шина, заранее закрепленная на верхней панели, автоматически входит в контакт с верхними торцами боковых шин. Провода от тумблера и потенциометра должны уже свисать внутрь отсека электроники.</li>
+<li>Крепление перегородки к дну (2 нижних стальных уголка, ППУ-лента). Использовать <strong>саморезы 3.5×12 мм</strong>.</li>
+<li>Крепление боковин к дну (по 2 стальных уголка с каждой стороны, ППУ-лента). Рекомендуется наживить все уголки, проверить прямоугольность короба (промерять диагонали), затем затягивать крест-накрест.</li>
+<li>Крепление перегородки к боковинам (4 стальных уголка, ППУ-лента).</li>
+<li>Установка верхней панели (стальные уголки, ППУ-лента). Провода от тумблера и потенциометра должны уже свисать внутрь отсека электроники.</li>
 </ol>
 <h3 id="этап-3-монтаж-электроники">ЭТАП 3. МОНТАЖ ЭЛЕКТРОНИКИ</h3>
 <ol>
-<li><strong>Усилитель JAB4 (виброразвязка на перегородке):</strong>
+<li><strong>Усилитель JAB4 (виброразвязка на рамке):</strong>
 <ul>
-<li>Во вклеенные в перегородку втулки М3 вкрутите четыре сайлентблока М3, используя каплю синего фиксатора резьбы. Затягивайте за металлическую шайбу у основания резины, не за сам резиновый элемент.</li>
-<li>Наденьте плату JAB4 на торчащие шпильки сайлентблоков, ориентируя антенну вверх (к радиопрозрачному окну на верхней панели).</li>
-<li>На каждую шпильку наденьте нейлоновую шайбу.</li>
-<li>Закрепите плату латунными гайками М3, удерживая шпильку пассатижами. Затягивайте до упругого состояния, без изгиба текстолита.</li>
-<li><strong>Результат:</strong> плата жестко зафиксирована на перегородке с зазором ~10 мм, полностью развязана от вибраций и имеет отличный обдув.</li>
+<li>Изготовить поликарбонатную рамку (90×120 мм, Н-образная) согласно Разделу 5.</li>
+<li>Жестко закрепить плату JAB4 на рамке винтами М3×10 мм с нейлоновыми шайбами и латунными гайками. Ориентация: питание влево, сигнал вправо.</li>
+<li>Подготовить два алюминиевых уголка 15×15 мм длиной 86 мм. Просверлить отверстия ∅7 мм и вставить резиновые втулки.</li>
+<li>Прикрутить уголки к верхней и нижней панелям корпуса саморезами 3.5×16 мм через втулки, предварительно наклеив полоски ППУ-ленты. Затягивать до легкого прижатия, без фанатизма.</li>
+<li>Установить рамку с платой в корпус, совместив отверстия в рамке с втулками в вертикальных полках уголков.</li>
+<li>Зафиксировать рамку винтами М3×10 мм и нейлоновыми гайками М3 с обратной стороны уголков. Затягивать до легкого упора. Плата должна «парить» на резиновых втулках, не касаясь металла.</li>
 </ul>
 </li>
 <li><strong>Блок питания:</strong> закрепить на дне через диэлектрическую прокладку винтами М3×10 к втулкам М3.</li>
@@ -734,7 +924,7 @@
 <li>Оплетка аудиокабеля изолирована от медного экрана корпуса.</li>
 </ul>
 </li>
-<li><strong>Выходы на динамики:</strong> от JAB4 вывести скрученные провода через перегородку. Отверстия загерметизировать автомобильным пластилином или кабельными втулками.</li>
+<li><strong>Выходы на динамики:</strong> от JAB4 вывести скрученные провода (три витые пары) через угловой гермоввод PG13.5, закрепленный на перегородке. Гермоввод затянуть, обеспечив герметичность.</li>
 <li><strong>Потенциометр громкости:</strong> подключить экранированным микрофонным кабелем к JAB4. Корпус заземлить отдельно.</li>
 <li><strong>Заземление:</strong> все экраны и общий минус (V- БП) соединить по топологии «звезда» в одной точке.</li>
 </ol>
@@ -742,7 +932,7 @@
 <ol>
 <li><strong>Задняя панель:</strong>
 <ul>
-<li>На торец короба наклеить EVA-ленту 10×2 мм.</li>
+<li>На торец короба наклеить ППУ-ленту 20×3 мм.</li>
 <li>Подключить <strong>кабельный мост</strong> экрана (нейлоновый винт М3×12, латунная шайба, кольцевая клемма, латунная гайка М3) и разъемы AUX/питания.</li>
 <li>Защелкнуть авторазъемы «папа-мама».</li>
 <li>Притянуть панель <strong>винтами М4×20 с потайной головкой</strong> в резьбовые втулки М4.</li>
@@ -750,24 +940,31 @@
 </li>
 <li><strong>Передняя панель (пустая):</strong>
 <ul>
-<li>На передний торец наклеить EVA-ленту.</li>
+<li>На передний торец наклеить ППУ-ленту.</li>
 <li>Притянуть панель <strong>винтами М4×20 с потайной головкой</strong> во втулки М4.</li>
 </ul>
 </li>
 </ol>
-<h3 id="этап-5-динамики-и-синтепон">ЭТАП 5. ДИНАМИКИ И СИНТЕПОН</h3>
+<h3 id="этап-5-герметизация-углов">ЭТАП 5. ГЕРМЕТИЗАЦИЯ УГЛОВ</h3>
+<ol>
+<li>Раскатать герметик-пластилин Stik‑o‑Seal в колбаски ∅5–6 мм.</li>
+<li>Уложить колбаски строго в углы стыков панелей ЛДСП изнутри акустического отсека.</li>
+<li>Пальцем или шпателем вдавить и разгладить пластилин, формируя ровную фаску.</li>
+<li>Поверх уложенного пластилина в каждом углу наклеить полосу малярного скотча для фиксации и защиты от налипания синтепона.</li>
+</ol>
+<h3 id="этап-6-динамики-и-синтепон">ЭТАП 6. ДИНАМИКИ И СИНТЕПОН</h3>
 <ol>
 <li>Через отверстия динамиков уложить и закрепить матерчатые подушки с синтепоном.</li>
 <li>Установить клеммники WAGO на стенках акустического отсека (стяжка + двусторонний скотч) в 5–8 см от перегородки. Вытянуть «хвосты» проводов от усилителя через отверстие НЧ-динамика, защелкнуть в WAGO. Ответные части WAGO с «хвостами» динамиков также защелкнуть.</li>
 <li><strong>Посадка динамиков:</strong>
 <ul>
 <li>Твитеры Sica: использовать штатные поролоновые прокладки.</li>
-<li>НЧ-динамик Wavecor: если штатная прокладка отсутствует, применить самоклеящуюся ленту EVA 5×1 мм по периметру фланца.</li>
+<li>НЧ-динамик Wavecor: вырезать кольцо-прокладку из фоамирана 1 мм по внешнему диаметру фланца (∅146 мм), уложить между динамиком и панелью.</li>
 <li>Закрепить динамики штатными винтами. Герметик не используется.</li>
 </ul>
 </li>
 </ol>
-<h3 id="этап-6-финал">ЭТАП 6. ФИНАЛ</h3>
+<h3 id="этап-7-финал">ЭТАП 7. ФИНАЛ</h3>
 <ol>
 <li>Изготовить П-образную рамку (рейки 5×20 мм) с тканью, закрепить на магниты и полкодержатели.</li>
 <li>Наклеить силиконовые ножки на дно.</li>
@@ -843,7 +1040,7 @@
 <ul>
 <li>Для левого и правого каналов добавьте по блоку <strong>General 2nd Order Filter</strong> (Filters → Second-Order → Double Precision → 1-Ch General 2nd Order).
 <ul>
-<li>Тип фильтра: High-Pass (HPF), Butterworth, 24 dB/oct, частота среза <strong>2800 Hz</strong>.</li>
+<li>Тип фильтра: High-Pass (HPF), Butterworth, 24 dB/oct, частота среза <strong>2500 Hz</strong>.</li>
 </ul>
 </li>
 <li>После каждого фильтра добавьте блок <strong>Gain</strong> (Volume Controls → Voltage Controlled → Gain). Впишите значение <strong>-8.0 dB</strong> для компенсации чувствительности твитеров.</li>
@@ -857,7 +1054,7 @@
 <li><strong>Parametric EQ:</strong> Peaking, частота <strong>95 Hz</strong>, усиление <strong>-3.5 dB</strong>, Q <strong>1.3</strong>.</li>
 <li><strong>Linkwitz Transform / Low Shelf:</strong> Low Shelf, частота <strong>50 Hz</strong>, усиление <strong>+3.0 dB</strong>, Q <strong>0.7</strong>.</li>
 <li><strong>Компенсация баффл-степа:</strong> Low Shelf, частота <strong>300 Hz</strong>, усиление <strong>+2.0 dB</strong>, Q <strong>0.7</strong>.</li>
-<li><strong>Кроссовер НЧ:</strong> Low-Pass (LPF), Butterworth, 24 dB/oct, частота <strong>2800 Hz</strong>.</li>
+<li><strong>Кроссовер НЧ:</strong> Low-Pass (LPF), Butterworth, 24 dB/oct, частота <strong>2500 Hz</strong>.</li>
 </ol>
 </li>
 </ul>
@@ -985,7 +1182,7 @@
 </table>
 <hr>
 <h2 id="10-заключение">10. ЗАКЛЮЧЕНИЕ</h2>
-<p>Проект «StereoRock 15 DSP» завершен. Версия 6.8 — это итог сотен часов обсуждений, расчетов и компромиссов. В нем учтены все аспекты: акустика, схемотехника, экранирование, технологичность сборки и ремонтопригодность, продвинутая виброразвязка электроники на перегородке, полная программная защита динамиков и опциональная внешняя антенна Bluetooth. Документация полностью автономна и готова к передаче в цех и к закупке компонентов. Удачи в сборке и чистого звука!</p>
+<p>Проект «StereoRock 15 DSP» завершен. Версия 6.15 — это итог сотен часов обсуждений, расчетов и компромиссов. В нем учтены все аспекты: акустика, схемотехника, экранирование, технологичность сборки и ремонтопригодность, продвинутая виброразвязка электроники на поликарбонатной рамке, полная программная защита динамиков, опциональная внешняя антенна Bluetooth, улучшенная частота раздела для более слитного звучания и надежная герметизация с использованием современных материалов. Документация полностью автономна и готова к передаче в цех и к закупке компонентов. Удачи в сборке и чистого звука!</p>
 
             
             
