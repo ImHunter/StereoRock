@@ -2,7 +2,7 @@
         <html>
         <head>
             <meta charset="UTF-8">
-            <title>&#x1f3b8; &Tcy;&iecy;&khcy;&ncy;&icy;&chcy;&iecy;&scy;&kcy;&icy;&jcy; &dcy;&ocy;&kcy;&ucy;&mcy;&iecy;&ncy;&tcy; &pcy;&rcy;&ocy;&iecy;&kcy;&tcy;&acy; &laquo;StereoRock 15 DSP&raquo;</title>
+            <title>1&period; &Kcy;&ocy;&ncy;&tscy;&iecy;&pcy;&tscy;&icy;&yacy; &icy; &pcy;&rcy;&icy;&ncy;&tscy;&icy;&pcy;&icy;&acy;&lcy;&softcy;&ncy;&ycy;&iecy; &rcy;&iecy;&shcy;&iecy;&ncy;&icy;&yacy;</title>
             <style>
 /* From extension vscode.github */
 /*---------------------------------------------------------------------------------------------
@@ -139,9 +139,9 @@
         </head>
         <body class="vscode-body vscode-light">
             <span id="markdown-mermaid" aria-hidden="true" data-config="{&quot;darkModeTheme&quot;:&quot;vscode&quot;,&quot;lightModeTheme&quot;:&quot;vscode&quot;,&quot;maxTextSize&quot;:50000,&quot;clickDrag&quot;:&quot;alt&quot;,&quot;showControls&quot;:&quot;onHoverOrFocus&quot;,&quot;resizable&quot;:true,&quot;maxHeight&quot;:&quot;&quot;}"></span>
-				<h1 id="-технический-документ-проекта-stereorock-15-dsp">🎸 Технический документ проекта «StereoRock 15 DSP»</h1>
-<p><strong>Версия:</strong> 6.26 (интегрированная)<br>
-<strong>Дата:</strong> 22.08.2026<br>
+				<p><strong>Версия:</strong> 7.0 (интегрированная)<br>
+<strong>Дата:</strong> 27.08.2026<br>
+<strong>Начало проекта:</strong> 25.07.2026<br>
 <strong>Авторы:</strong> Мастер и Инженер</p>
 <hr>
 <h2 id="1-концепция-и-принципиальные-решения">1. Концепция и принципиальные решения</h2>
@@ -338,7 +338,7 @@
 </tbody>
 </table>
 <p><strong>Примечание:</strong> все ламинированные поверхности — цвет по выбору.</p>
-<h3 id="42-верхняя-панель-мдф-16-мм--регулятор-громкости-тумблер-светодиод">4.2. Верхняя панель (МДФ 16 мм) — регулятор громкости, тумблер, светодиод</h3>
+<h3 id="42-верхняя-панель-мдф-16-мм--регулятор-громкости-тумблер">4.2. Верхняя панель (МДФ 16 мм) — регулятор громкости, тумблер</h3>
 <ul>
 <li>Все координаты указаны относительно <strong>левого (X) и переднего (Y) краев верхней панели</strong>.</li>
 <li><strong>Регулятор громкости:</strong>
@@ -355,13 +355,7 @@
 <li>Координаты центра: X = <strong>50 мм</strong>, Y = <strong>170 мм</strong>.</li>
 </ul>
 </li>
-<li><strong>Светодиод индикации включения:</strong>
-<ul>
-<li>Отверстие ∅5 мм, X = <strong>150 мм</strong>, Y = <strong>170 мм</strong>.</li>
-<li>Подключение: анод через резистор 2.2 кОм к +24 В (после тумблера), катод к GND.</li>
-</ul>
-</li>
-<li>Все три элемента находятся на одной линии (Y=170 мм) над отсеком электроники.</li>
+<li>Все элементы находятся на одной линии (Y=170 мм) над отсеком электроники.</li>
 <li><strong>Радиопрозрачное окно Bluetooth:</strong> в медном экране верхней панели оставляется неоклеенный участок 50×50 мм, центр X = <strong>175 мм</strong>, Y = <strong>143 мм</strong>.</li>
 </ul>
 <h3 id="43-задняя-панель-abs-5-мм">4.3. Задняя панель (ABS 5 мм)</h3>
@@ -385,7 +379,22 @@
 </ul>
 <h3 id="45-перегородка-мдф-16-мм">4.5. Перегородка (МДФ 16 мм)</h3>
 <ul>
-<li><strong>Гермоввод для акустических проводов:</strong> угловой PG13.5, фланцевое крепление со стороны акустического отсека. Координаты: от левого края <strong>X = 25 мм</strong>, от дна <strong>Y = 20 мм</strong>. Носик ориентирован вертикально вверх или горизонтально вправо.</li>
+<li><strong>Переходные отверстия для акустических проводов:</strong><br>
+Два отверстия, разнесённые по углам:
+<ul>
+<li><strong>Левое крыло (силовое):</strong> отверстие <strong>∅12 мм</strong> в левом нижнем углу, на 30–40 мм выше уровня клеммных колодок. Через него проходят жгуты НЧ (1.5 мм²) и ВЧ (1.0 мм²).</li>
+<li><strong>Правое крыло (сигнальное):</strong> отверстие <strong>∅8–10 мм</strong> в правом нижнем углу, также выше колодок. Через него проходят провода LED (0.5 мм²) и резерв.<br>
+Точные координаты определяются <strong>по месту</strong> после установки всех уголков и колодок.</li>
+</ul>
+</li>
+<li><strong>Клеммные колодки:</strong> на перегородке, со стороны акустического отсека, устанавливаются три колодки:
+<ul>
+<li><strong>ТВ-2504</strong> (4 контакта, М4) — для НЧ, левый нижний угол.</li>
+<li><strong>ТВ-1504</strong> (4 контакта, М3) — для ВЧ, левый нижний угол, рядом с ТВ-2504.</li>
+<li><strong>ТВ-1504</strong> (4 контакта, М3) — для сигналов LED и резерва, правый нижний угол.
+Колодки крепятся через футорки Permo D5 (вклеены в МДФ), подкладывается фоамиран 1 мм.</li>
+</ul>
+</li>
 <li><strong>Блок питания:</strong> крепится со стороны отсека электроники. Координаты: от левого края <strong>X = 60 мм</strong>, от дна <strong>Y = 40 мм</strong>. Занимаемая область: <strong>X = 60…157 мм, Y = 40…169 мм</strong>.</li>
 <li><strong>Рамка JAB4:</strong> крепится к верхней и нижней панелям, но на перегородке не размещается. Её пространственное положение по горизонтали: <strong>X = 170…260 мм</strong> от левого края перегородки.</li>
 </ul>
@@ -406,10 +415,10 @@
 <li>Под вуфер: круглое отверстие <strong>∅168 мм</strong> + зазор 0.5 мм.</li>
 </ul>
 </li>
-</ul>
-<p><strong>Сдвиг вуфера:</strong><br>
+<li><strong>Сдвиг вуфера:</strong><br>
 Вуфер смещён <strong>вверх на 5 мм</strong> относительно геометрического центра панели по вертикали (с Y=113 до Y=118).<br>
-Это сделано для уменьшения симметричных дифракционных отражений от верхнего и нижнего краёв передней панели. Небольшое смещение разносит расстояния до краёв, сглаживая возможные пики и провалы АЧХ в области 1–3 кГц.</p>
+Это сделано для уменьшения симметричных дифракционных отражений от верхнего и нижнего краёв передней панели. Небольшое смещение разносит расстояния до краёв, сглаживая возможные пики и провалы АЧХ в области 1–3 кГц.</li>
+</ul>
 <h3 id="47-рамка-платы-jab4">4.7. Рамка платы JAB4</h3>
 <ul>
 <li><strong>Материал:</strong> поликарбонат монолитный 4 мм.</li>
@@ -596,6 +605,24 @@
 <li><strong>Приоритет установки:</strong> боковые стороны → верх → низ.</li>
 <li>Профиль наклеивается после сборки, стыки запиливаются «в ус».</li>
 </ul>
+<h3 id="412-индикаторный-модуль-на-передней-панели">4.12. Индикаторный модуль на передней панели</h3>
+<p>Для отображения состояния включения на передней панели устанавливается <strong>светодиодный индикатор с выносным световодом</strong>, не нарушающий герметичность акустического отсека.</p>
+<p><strong>Состав модуля:</strong></p>
+<ul>
+<li><strong>Световод жёсткий 3 мм</strong> (BIVAR PLP2-750 или аналог) – вклеивается в отверстие ∅3 мм в передней панели (МДФ + накладка) заподлицо с наружной поверхностью накладки.</li>
+<li><strong>Держатель светодиода 3 мм металлический</strong> (Arlight 3CCI) с зажимной гайкой и капроновой втулкой – крепится на пластине ABS (1.5–2 мм), которая прикручивается к внутренней стороне передней панели через футорки D5.</li>
+<li><strong>Светодиод 3 мм с плоской линзой</strong> (OPTOSUPPLY OSB5SA3NE4A) – вставляется в держатель сзади, плоская линза прижимается к внутреннему торцу световода.</li>
+</ul>
+<p><strong>Монтаж:</strong></p>
+<ol>
+<li>Сверлится сквозное отверстие ∅3 мм в передней панели.</li>
+<li>Световод вклеивается, торцы обрабатываются.</li>
+<li>Между панелью и ABS-пластиной прокладывается фоамиран 1 мм.</li>
+<li>Пластина с держателем прикручивается к панели саморезами 3.5×12 мм через футорки Permo D5 (в МДФ) и отверстия в пластине.</li>
+<li>Светодиод подключается проводами 0.5 мм² (оранжевый LED+, чёрный LED−) через резистор 2.7 кОм к +24 В после реле.</li>
+<li>Ножки светодиода и резистор изолируются тонкой термоусадкой.</li>
+</ol>
+<p><strong>Демонтаж:</strong> при снятии передней панели светодиод вынимается из держателя, панель снимается вместе со световодом и держателем, провода остаются в акустическом отсеке.</p>
 <hr>
 <h2 id="5-полная-спецификация-компонентов">5. Полная спецификация компонентов</h2>
 <table>
@@ -692,22 +719,38 @@
 </tr>
 <tr>
 <td style="text-align:left">11</td>
-<td style="text-align:left">Светодиод зелёный 5 мм</td>
+<td style="text-align:left">Держатель светодиода 3 мм металлический Arlight 3CCI</td>
 <td style="text-align:left">1</td>
 <td style="text-align:left"></td>
-<td style="text-align:left">Радиомагазин / Ozon</td>
-<td style="text-align:left">~10–20 ₽</td>
+<td style="text-align:left"><a href="https://ozon.ru/t/2zewGcb">Ozon</a></td>
+<td style="text-align:left">87 ₽</td>
 </tr>
 <tr>
 <td style="text-align:left">12</td>
-<td style="text-align:left">Резистор 2.2 кОм 0.25 Вт</td>
+<td style="text-align:left">Световод жёсткий 3 мм BIVAR PLP2-750</td>
 <td style="text-align:left">1</td>
 <td style="text-align:left"></td>
+<td style="text-align:left"><a href="https://ozon.ru/t/gm47kZG">Ozon</a></td>
+<td style="text-align:left">233 ₽</td>
+</tr>
+<tr>
+<td style="text-align:left">13</td>
+<td style="text-align:left">Светодиод 3 мм голубой OPTOSUPPLY OSB5SA3NE4A</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left"></td>
+<td style="text-align:left"><a href="https://ozon.ru/t/bTuQlTK">Ozon</a></td>
+<td style="text-align:left">156 ₽</td>
+</tr>
+<tr>
+<td style="text-align:left">14</td>
+<td style="text-align:left">Резистор 2.7 кОм 0.25 Вт</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">Для светодиода (7–8 мА)</td>
 <td style="text-align:left">Радиомагазин / Ozon</td>
 <td style="text-align:left">~5–10 ₽</td>
 </tr>
 <tr>
-<td style="text-align:left">13</td>
+<td style="text-align:left">15</td>
 <td style="text-align:left">Предохранитель T 2.5 А (5×20 мм) + держатель</td>
 <td style="text-align:left">1</td>
 <td style="text-align:left"></td>
@@ -715,7 +758,7 @@
 <td style="text-align:left">~100–150 ₽</td>
 </tr>
 <tr>
-<td style="text-align:left">14</td>
+<td style="text-align:left">16</td>
 <td style="text-align:left">NTC‑термистор 5D‑15 (5 Ом)</td>
 <td style="text-align:left">1</td>
 <td style="text-align:left"></td>
@@ -723,7 +766,7 @@
 <td style="text-align:left">~50–80 ₽</td>
 </tr>
 <tr>
-<td style="text-align:left">15</td>
+<td style="text-align:left">17</td>
 <td style="text-align:left">Варистор 10D471K</td>
 <td style="text-align:left">1</td>
 <td style="text-align:left"></td>
@@ -731,7 +774,7 @@
 <td style="text-align:left">~30–50 ₽</td>
 </tr>
 <tr>
-<td style="text-align:left">16</td>
+<td style="text-align:left">18</td>
 <td style="text-align:left">PolySwitch 0.1 А (100 мА)</td>
 <td style="text-align:left">1</td>
 <td style="text-align:left"></td>
@@ -739,7 +782,7 @@
 <td style="text-align:left">~50–80 ₽</td>
 </tr>
 <tr>
-<td style="text-align:left">17</td>
+<td style="text-align:left">19</td>
 <td style="text-align:left"><strong>Самовосстанавливающийся предохранитель RUEF400 (4 А)</strong></td>
 <td style="text-align:left">1</td>
 <td style="text-align:left">В цепи +24 В на JAB4</td>
@@ -747,7 +790,7 @@
 <td style="text-align:left">~100–150 ₽</td>
 </tr>
 <tr>
-<td style="text-align:left">18</td>
+<td style="text-align:left">20</td>
 <td style="text-align:left">Акустический синтепон (негорючий) 50 г</td>
 <td style="text-align:left">1</td>
 <td style="text-align:left"></td>
@@ -755,7 +798,7 @@
 <td style="text-align:left">~100–150 ₽</td>
 </tr>
 <tr>
-<td style="text-align:left">19</td>
+<td style="text-align:left">21</td>
 <td style="text-align:left">Токопроводящая EMI‑прокладка</td>
 <td style="text-align:left">0.5 м</td>
 <td style="text-align:left"></td>
@@ -763,7 +806,7 @@
 <td style="text-align:left">~300–400 ₽</td>
 </tr>
 <tr>
-<td style="text-align:left">20</td>
+<td style="text-align:left">22</td>
 <td style="text-align:left">Ферритовое кольцо clip‑on (∅5–7 мм)</td>
 <td style="text-align:left">2</td>
 <td style="text-align:left"></td>
@@ -771,7 +814,7 @@
 <td style="text-align:left">~50–80 ₽/шт.</td>
 </tr>
 <tr>
-<td style="text-align:left">21</td>
+<td style="text-align:left">23</td>
 <td style="text-align:left"><strong>МДФ 16 мм ламинированный</strong>, распил</td>
 <td style="text-align:left">1 компл.</td>
 <td style="text-align:left">Детали по таблице 4.1</td>
@@ -779,7 +822,7 @@
 <td style="text-align:left">~2 500–3 500 ₽</td>
 </tr>
 <tr>
-<td style="text-align:left">22</td>
+<td style="text-align:left">24</td>
 <td style="text-align:left"><strong>ABS‑пластик 5 мм белый глянцевый</strong>, 356×226 мм</td>
 <td style="text-align:left">1</td>
 <td style="text-align:left">Задняя панель</td>
@@ -787,7 +830,7 @@
 <td style="text-align:left">~400–600 ₽</td>
 </tr>
 <tr>
-<td style="text-align:left">23</td>
+<td style="text-align:left">25</td>
 <td style="text-align:left"><strong>ABS‑пластик ~4 мм</strong>, 356×226 мм</td>
 <td style="text-align:left">1</td>
 <td style="text-align:left">Накладка передней панели</td>
@@ -795,7 +838,7 @@
 <td style="text-align:left">~400–600 ₽</td>
 </tr>
 <tr>
-<td style="text-align:left">24</td>
+<td style="text-align:left">26</td>
 <td style="text-align:left"><strong>МДФ 16×20 мм бруски</strong></td>
 <td style="text-align:left">~1 м</td>
 <td style="text-align:left">8 брусков суммарной длиной ~930 мм</td>
@@ -803,7 +846,7 @@
 <td style="text-align:left">~200–300 ₽</td>
 </tr>
 <tr>
-<td style="text-align:left">25</td>
+<td style="text-align:left">27</td>
 <td style="text-align:left">Медная самоклеящаяся лента 20–30 мм</td>
 <td style="text-align:left">1 рулон</td>
 <td style="text-align:left"></td>
@@ -811,7 +854,7 @@
 <td style="text-align:left">~400–700 ₽</td>
 </tr>
 <tr>
-<td style="text-align:left">26</td>
+<td style="text-align:left">28</td>
 <td style="text-align:left">Медная плетёнка ПМЛ 2×4 мм²</td>
 <td style="text-align:left">~1 м</td>
 <td style="text-align:left"></td>
@@ -819,7 +862,7 @@
 <td style="text-align:left">~200–300 ₽</td>
 </tr>
 <tr>
-<td style="text-align:left">27</td>
+<td style="text-align:left">29</td>
 <td style="text-align:left">Неклеевая медная фольга 0.1 мм</td>
 <td style="text-align:left">~1 м</td>
 <td style="text-align:left"></td>
@@ -827,7 +870,7 @@
 <td style="text-align:left">~200–300 ₽</td>
 </tr>
 <tr>
-<td style="text-align:left">28</td>
+<td style="text-align:left">30</td>
 <td style="text-align:left">Кольцевые клеммы под винт М4</td>
 <td style="text-align:left">10 шт.</td>
 <td style="text-align:left"></td>
@@ -835,7 +878,7 @@
 <td style="text-align:left">~50–80 ₽/упак.</td>
 </tr>
 <tr>
-<td style="text-align:left">29</td>
+<td style="text-align:left">31</td>
 <td style="text-align:left">Шайбы кузовные DIN 9021, М4</td>
 <td style="text-align:left">10 шт.</td>
 <td style="text-align:left"></td>
@@ -843,7 +886,7 @@
 <td style="text-align:left">~50–80 ₽/упак.</td>
 </tr>
 <tr>
-<td style="text-align:left">30</td>
+<td style="text-align:left">32</td>
 <td style="text-align:left">Шайбы плоские DIN 125, М4</td>
 <td style="text-align:left">10 шт.</td>
 <td style="text-align:left"></td>
@@ -851,7 +894,7 @@
 <td style="text-align:left">~30–50 ₽/упак.</td>
 </tr>
 <tr>
-<td style="text-align:left">31</td>
+<td style="text-align:left">33</td>
 <td style="text-align:left">Нейлоновые дюбели Fischer SX ∅4 мм</td>
 <td style="text-align:left">10 шт.</td>
 <td style="text-align:left"></td>
@@ -859,7 +902,7 @@
 <td style="text-align:left">~100–150 ₽/упак.</td>
 </tr>
 <tr>
-<td style="text-align:left">32</td>
+<td style="text-align:left">34</td>
 <td style="text-align:left">Тканевая ворсистая изолента (Tesa 51608)</td>
 <td style="text-align:left">~1 м</td>
 <td style="text-align:left"></td>
@@ -867,7 +910,7 @@
 <td style="text-align:left">~150–200 ₽</td>
 </tr>
 <tr>
-<td style="text-align:left">33</td>
+<td style="text-align:left">35</td>
 <td style="text-align:left"><strong>Вспененная резина Шумология Hide 3</strong></td>
 <td style="text-align:left">1 лист 100×65 см</td>
 <td style="text-align:left">Уплотнители</td>
@@ -875,15 +918,15 @@
 <td style="text-align:left">860 ₽</td>
 </tr>
 <tr>
-<td style="text-align:left">34</td>
+<td style="text-align:left">36</td>
 <td style="text-align:left">Футорка Permo D5</td>
-<td style="text-align:left"><strong>60 шт.</strong></td>
-<td style="text-align:left">Для уголков, БП, реле, пластины</td>
+<td style="text-align:left"><strong>70 шт.</strong></td>
+<td style="text-align:left">Для уголков, БП, реле, пластин, колодок</td>
 <td style="text-align:left"><a href="https://ozon.ru/t/5DnoogF">Ozon</a></td>
 <td style="text-align:left">690 ₽ (за 60 шт.)</td>
 </tr>
 <tr>
-<td style="text-align:left">35</td>
+<td style="text-align:left">37</td>
 <td style="text-align:left"><strong>Резьбовые втулки М4 (латунь, длина 10–12 мм)</strong></td>
 <td style="text-align:left"><strong>18 шт.</strong></td>
 <td style="text-align:left">В торцы панелей</td>
@@ -891,7 +934,7 @@
 <td style="text-align:left">~150–200 ₽/упак.</td>
 </tr>
 <tr>
-<td style="text-align:left">36</td>
+<td style="text-align:left">38</td>
 <td style="text-align:left">Уголки мебельные 15×15 мм, стальные</td>
 <td style="text-align:left"><strong>18 шт.</strong></td>
 <td style="text-align:left">Каркас короба</td>
@@ -899,15 +942,15 @@
 <td style="text-align:left">~300–400 ₽/упак.</td>
 </tr>
 <tr>
-<td style="text-align:left">37</td>
+<td style="text-align:left">39</td>
 <td style="text-align:left">Саморезы 3.5×12 мм (пресс‑шайба)</td>
-<td style="text-align:left"><strong>50 шт.</strong></td>
-<td style="text-align:left">Уголки, БП, реле, пластины</td>
+<td style="text-align:left"><strong>60 шт.</strong></td>
+<td style="text-align:left">Уголки, БП, реле, пластины, колодки</td>
 <td style="text-align:left">Строймаркет / Ozon</td>
 <td style="text-align:left">~100–150 ₽/упак.</td>
 </tr>
 <tr>
-<td style="text-align:left">38</td>
+<td style="text-align:left">40</td>
 <td style="text-align:left"><strong>Винты М4×20 с потайной головкой</strong></td>
 <td style="text-align:left"><strong>12 шт.</strong></td>
 <td style="text-align:left">Передняя панель</td>
@@ -915,7 +958,7 @@
 <td style="text-align:left">~100–150 ₽/упак.</td>
 </tr>
 <tr>
-<td style="text-align:left">39</td>
+<td style="text-align:left">41</td>
 <td style="text-align:left"><strong>Винты М4×12 или М4×16 с потайной головкой</strong></td>
 <td style="text-align:left"><strong>6 шт.</strong></td>
 <td style="text-align:left">Задняя панель</td>
@@ -923,7 +966,7 @@
 <td style="text-align:left">~50–80 ₽/упак.</td>
 </tr>
 <tr>
-<td style="text-align:left">40</td>
+<td style="text-align:left">42</td>
 <td style="text-align:left">Винты М3×10 мм с полукруглой головкой</td>
 <td style="text-align:left">12 шт.</td>
 <td style="text-align:left">Крепление рамки JAB4</td>
@@ -931,7 +974,7 @@
 <td style="text-align:left">~50 ₽</td>
 </tr>
 <tr>
-<td style="text-align:left">41</td>
+<td style="text-align:left">43</td>
 <td style="text-align:left">Гайки М3 латунные</td>
 <td style="text-align:left">4 шт.</td>
 <td style="text-align:left"></td>
@@ -939,7 +982,7 @@
 <td style="text-align:left">копейки</td>
 </tr>
 <tr>
-<td style="text-align:left">42</td>
+<td style="text-align:left">44</td>
 <td style="text-align:left">Гайки М3 нейлоновые</td>
 <td style="text-align:left">4 шт.</td>
 <td style="text-align:left"></td>
@@ -947,7 +990,7 @@
 <td style="text-align:left">копейки</td>
 </tr>
 <tr>
-<td style="text-align:left">43</td>
+<td style="text-align:left">45</td>
 <td style="text-align:left">Шайбы нейлоновые М3</td>
 <td style="text-align:left">4 шт.</td>
 <td style="text-align:left"></td>
@@ -955,7 +998,7 @@
 <td style="text-align:left">копейки</td>
 </tr>
 <tr>
-<td style="text-align:left">44</td>
+<td style="text-align:left">46</td>
 <td style="text-align:left">Набор нейлоновых проставок (200 шт.)</td>
 <td style="text-align:left">1</td>
 <td style="text-align:left"></td>
@@ -963,7 +1006,7 @@
 <td style="text-align:left">328 ₽</td>
 </tr>
 <tr>
-<td style="text-align:left">45</td>
+<td style="text-align:left">47</td>
 <td style="text-align:left">Силиконовые ножки (4 шт.)</td>
 <td style="text-align:left">1 компл.</td>
 <td style="text-align:left"></td>
@@ -971,7 +1014,7 @@
 <td style="text-align:left">~100–150 ₽</td>
 </tr>
 <tr>
-<td style="text-align:left">46</td>
+<td style="text-align:left">48</td>
 <td style="text-align:left">Гнездо 3.5 мм стерео на панель</td>
 <td style="text-align:left">1</td>
 <td style="text-align:left"></td>
@@ -979,119 +1022,159 @@
 <td style="text-align:left">~100–150 ₽</td>
 </tr>
 <tr>
-<td style="text-align:left">47</td>
-<td style="text-align:left">Клеммники WAGO 221‑412 (2‑проводные)</td>
-<td style="text-align:left">6 шт.</td>
-<td style="text-align:left"></td>
-<td style="text-align:left"><a href="https://ozon.ru/t/fBXocQU">Ozon</a></td>
-<td style="text-align:left">452 ₽ за 6 шт.</td>
-</tr>
-<tr>
-<td style="text-align:left">48</td>
-<td style="text-align:left">Экранированный микрофонный кабель</td>
-<td style="text-align:left">0.5 м</td>
-<td style="text-align:left"></td>
-<td style="text-align:left">Радиомагазин / Ozon</td>
-<td style="text-align:left">~100–150 ₽</td>
-</tr>
-<tr>
 <td style="text-align:left">49</td>
-<td style="text-align:left">Сетка стекловолоконная защитная</td>
-<td style="text-align:left">1 упак.</td>
-<td style="text-align:left"></td>
-<td style="text-align:left">Строймаркет / Ozon</td>
-<td style="text-align:left">~100–150 ₽</td>
+<td style="text-align:left">Провод МГШВ 1.5 мм² красный</td>
+<td style="text-align:left">0.5 м</td>
+<td style="text-align:left">НЧ (+)</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">~20 ₽/м</td>
 </tr>
 <tr>
 <td style="text-align:left">50</td>
-<td style="text-align:left">Гибкий провод 0.75 мм² с клеммами L=160 мм</td>
-<td style="text-align:left">1 шт.</td>
-<td style="text-align:left"></td>
+<td style="text-align:left">Провод МГШВ 1.5 мм² чёрный</td>
+<td style="text-align:left">0.5 м</td>
+<td style="text-align:left">НЧ (−)</td>
 <td style="text-align:left">Радиомагазин / Ozon</td>
-<td style="text-align:left">~50–80 ₽</td>
+<td style="text-align:left">~20 ₽/м</td>
 </tr>
 <tr>
 <td style="text-align:left">51</td>
-<td style="text-align:left">Нейлоновый винт М3×12 + латунная шайба + латунная гайка М3</td>
-<td style="text-align:left">1 компл.</td>
-<td style="text-align:left"></td>
+<td style="text-align:left">Провод МГШВ 1.0 мм² жёлтый</td>
+<td style="text-align:left">0.5 м</td>
+<td style="text-align:left">Левый твитер (+)</td>
 <td style="text-align:left">Радиомагазин / Ozon</td>
-<td style="text-align:left">~50–80 ₽</td>
+<td style="text-align:left">~15 ₽/м</td>
 </tr>
 <tr>
 <td style="text-align:left">52</td>
-<td style="text-align:left">Авторазъём «папа‑мама» 2‑контактный</td>
-<td style="text-align:left">3 шт.</td>
-<td style="text-align:left"></td>
-<td style="text-align:left">Автомагазин / Ozon</td>
-<td style="text-align:left">~100–150 ₽/упак.</td>
+<td style="text-align:left">Провод МГШВ 1.0 мм² чёрный</td>
+<td style="text-align:left">0.6 м</td>
+<td style="text-align:left">Левый твитер (−) с биркой L−</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">~15 ₽/м</td>
 </tr>
 <tr>
 <td style="text-align:left">53</td>
-<td style="text-align:left">Металлорукав + термоусадка</td>
-<td style="text-align:left">~0.5 м</td>
-<td style="text-align:left"></td>
-<td style="text-align:left">Электротовары / Ozon</td>
-<td style="text-align:left">~200–300 ₽</td>
+<td style="text-align:left">Провод МГШВ 1.0 мм² синий</td>
+<td style="text-align:left">0.6 м</td>
+<td style="text-align:left">Правый твитер (+)</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">~15 ₽/м</td>
 </tr>
 <tr>
 <td style="text-align:left">54</td>
-<td style="text-align:left">Провода, кабели, термоусадки, эпоксидный клей, тех. вазелин</td>
-<td style="text-align:left">компл.</td>
-<td style="text-align:left"><strong>Включая трёхжильный сетевой кабель 3×0.75 мм²</strong></td>
-<td style="text-align:left"></td>
-<td style="text-align:left">~500–700 ₽</td>
+<td style="text-align:left">Провод МГШВ 1.0 мм² чёрный</td>
+<td style="text-align:left">0.6 м</td>
+<td style="text-align:left">Правый твитер (−) с биркой R−</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">~15 ₽/м</td>
 </tr>
 <tr>
 <td style="text-align:left">55</td>
-<td style="text-align:left">Фоамиран 1 мм, набор A4</td>
-<td style="text-align:left">1</td>
-<td style="text-align:left"></td>
-<td style="text-align:left"><a href="https://ozon.ru/t/cFggT5Z">Ozon</a></td>
-<td style="text-align:left">95 ₽</td>
+<td style="text-align:left">Провод МГШВ 0.5 мм² оранжевый</td>
+<td style="text-align:left">0.5 м</td>
+<td style="text-align:left">LED (+)</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">~10 ₽/м</td>
 </tr>
 <tr>
 <td style="text-align:left">56</td>
-<td style="text-align:left">Гермоввод угловой PG13.5</td>
-<td style="text-align:left">1</td>
-<td style="text-align:left"></td>
-<td style="text-align:left"><a href="https://ozon.ru/t/wEIaq6Z">Ozon</a></td>
-<td style="text-align:left">250 ₽</td>
+<td style="text-align:left">Провод МГШВ 0.5 мм² чёрный</td>
+<td style="text-align:left">0.5 м</td>
+<td style="text-align:left">LED (−)</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">~10 ₽/м</td>
 </tr>
 <tr>
 <td style="text-align:left">57</td>
-<td style="text-align:left">Гермоввод прямой PG13.5</td>
-<td style="text-align:left">1</td>
-<td style="text-align:left"></td>
-<td style="text-align:left">Ozon</td>
-<td style="text-align:left">~100–150 ₽</td>
-</tr>
-<tr>
-<td style="text-align:left">58</td>
-<td style="text-align:left">Пластилин Stik‑o‑Seal</td>
-<td style="text-align:left">1 упак.</td>
-<td style="text-align:left"></td>
-<td style="text-align:left">Строймаркет / Ozon</td>
-<td style="text-align:left">~200–300 ₽</td>
-</tr>
-<tr>
-<td style="text-align:left">59</td>
-<td style="text-align:left">Малярный скотч</td>
-<td style="text-align:left">1 рулон</td>
-<td style="text-align:left"></td>
-<td style="text-align:left">Строймаркет / Ozon</td>
+<td style="text-align:left">Клеммная колодка ТВ-2504 (4 контакта, М4)</td>
+<td style="text-align:left">1 шт.</td>
+<td style="text-align:left">Для НЧ</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
 <td style="text-align:left">~50–80 ₽</td>
 </tr>
 <tr>
-<td style="text-align:left">60</td>
-<td style="text-align:left">Разъём SMA + пигтейл U.FL (опционально)</td>
-<td style="text-align:left">1 компл.</td>
-<td style="text-align:left"></td>
+<td style="text-align:left">58</td>
+<td style="text-align:left">Клеммная колодка ТВ-1504 (4 контакта, М3)</td>
+<td style="text-align:left">3 шт.</td>
+<td style="text-align:left">Для ВЧ и сигналов</td>
 <td style="text-align:left">Радиомагазин / Ozon</td>
-<td style="text-align:left">~300–400 ₽</td>
+<td style="text-align:left">~30–50 ₽/шт.</td>
+</tr>
+<tr>
+<td style="text-align:left">59</td>
+<td style="text-align:left">Наконечник вилочный НВИ 2-4 (синий)</td>
+<td style="text-align:left">2 шт.</td>
+<td style="text-align:left">НЧ 1.5 мм²</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">~5 ₽/шт.</td>
+</tr>
+<tr>
+<td style="text-align:left">60</td>
+<td style="text-align:left">Наконечник вилочный НВИ 1.25-3 (красный)</td>
+<td style="text-align:left">10 шт.</td>
+<td style="text-align:left">ВЧ и сигналы</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">~3 ₽/шт.</td>
 </tr>
 <tr>
 <td style="text-align:left">61</td>
+<td style="text-align:left">Термоусадочная трубка с клеевым слоем ∅10–12 мм</td>
+<td style="text-align:left">0.1 м</td>
+<td style="text-align:left">Герметизация жгутов</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">~50 ₽/м</td>
+</tr>
+<tr>
+<td style="text-align:left">62</td>
+<td style="text-align:left">Термоусадочная трубка тонкая ∅1.5–2 мм</td>
+<td style="text-align:left">0.1 м</td>
+<td style="text-align:left">Изоляция ножек светодиода</td>
+<td style="text-align:left">Радиомагазин / Ozon</td>
+<td style="text-align:left">~20 ₽/м</td>
+</tr>
+<tr>
+<td style="text-align:left">63</td>
+<td style="text-align:left">Полиуретановый герметик PU-40</td>
+<td style="text-align:left">1 туба</td>
+<td style="text-align:left">Герметизация переходных отверстий</td>
+<td style="text-align:left">Строймаркет / Ozon</td>
+<td style="text-align:left">~300–500 ₽</td>
+</tr>
+<tr>
+<td style="text-align:left">64</td>
+<td style="text-align:left">Пластиковые стяжки 2.5×100 мм</td>
+<td style="text-align:left">10 шт.</td>
+<td style="text-align:left">Фиксация жгутов</td>
+<td style="text-align:left">Строймаркет / Ozon</td>
+<td style="text-align:left">~50–80 ₽/упак.</td>
+</tr>
+<tr>
+<td style="text-align:left">65</td>
+<td style="text-align:left">Самоклеящиеся площадки под стяжки</td>
+<td style="text-align:left">6 шт.</td>
+<td style="text-align:left">Крепление жгутов</td>
+<td style="text-align:left">Строймаркет / Ozon</td>
+<td style="text-align:left">~50–80 ₽/упак.</td>
+</tr>
+<tr>
+<td style="text-align:left">66</td>
+<td style="text-align:left">ABS-пластина 1.5–2 мм</td>
+<td style="text-align:left">~40×20 мм</td>
+<td style="text-align:left">Основание для держателя светодиода</td>
+<td style="text-align:left">Изготовить</td>
+<td style="text-align:left">—</td>
+</tr>
+<tr>
+<td style="text-align:left">67</td>
+<td style="text-align:left">Эпоксидный клей</td>
+<td style="text-align:left">1 уп.</td>
+<td style="text-align:left">Вклеивание футорок, световода</td>
+<td style="text-align:left">Строймаркет / Ozon</td>
+<td style="text-align:left">~100–150 ₽</td>
+</tr>
+<tr>
+<td style="text-align:left">68</td>
 <td style="text-align:left">Поликарбонат монолитный 4 мм, <strong>120×150 мм</strong></td>
 <td style="text-align:left">1</td>
 <td style="text-align:left">Рамка JAB4</td>
@@ -1099,7 +1182,7 @@
 <td style="text-align:left">309 ₽</td>
 </tr>
 <tr>
-<td style="text-align:left">62</td>
+<td style="text-align:left">69</td>
 <td style="text-align:left">Уголок алюминиевый 15×15×1.5 мм, 500 мм</td>
 <td style="text-align:left">1</td>
 <td style="text-align:left"></td>
@@ -1107,7 +1190,7 @@
 <td style="text-align:left">209 ₽</td>
 </tr>
 <tr>
-<td style="text-align:left">63</td>
+<td style="text-align:left">70</td>
 <td style="text-align:left">Втулка резиновая проходная ∅7.0/∅4 мм</td>
 <td style="text-align:left">10 шт.</td>
 <td style="text-align:left"></td>
@@ -1115,7 +1198,7 @@
 <td style="text-align:left">350 ₽</td>
 </tr>
 <tr>
-<td style="text-align:left">64</td>
+<td style="text-align:left">71</td>
 <td style="text-align:left">Пластина металлическая 30×20×1.5 мм (для петли кабеля)</td>
 <td style="text-align:left">1</td>
 <td style="text-align:left"></td>
@@ -1123,10 +1206,10 @@
 <td style="text-align:left">—</td>
 </tr>
 <tr>
-<td style="text-align:left">65</td>
+<td style="text-align:left">72</td>
 <td style="text-align:left"><strong>Полукруглый профиль ПВХ/ABS радиус 8–12 мм</strong></td>
 <td style="text-align:left">~1 м</td>
-<td style="text-align:left">Опционально, для торцов передней панели</td>
+<td style="text-align:left">Опционально</td>
 <td style="text-align:left">Строймаркет / Ozon</td>
 <td style="text-align:left">~200–300 ₽</td>
 </tr>
@@ -1134,19 +1217,20 @@
 </table>
 <hr>
 <h2 id="6-пошаговая-инструкция-по-сборке">6. Пошаговая инструкция по сборке</h2>
+<h2 id="6-пошаговая-инструкция-по-сборке-1">6. Пошаговая инструкция по сборке</h2>
 <h3 id="этап-1-подготовка-деталей">Этап 1. Подготовка деталей</h3>
 <ol>
 <li>Распил МДФ по таблице 4.1. Задняя панель — ABS 5 мм, накладка передней панели — ABS ~4 мм, пластина нижнего ввода — ABS 5 мм.</li>
 <li>Подготовка брусков МДФ 16×20 мм: раскрой на 8 брусков суммарной длиной ~930 мм, запил в ус, скосы под динамики.</li>
 <li>Сверление отверстий:
 <ul>
-<li><strong>Передняя панель:</strong> НЧ ∅143 (центр X=178, Y=118), твитеры ∅48.4 (левый X=50, Y=113, правый X=306, Y=113), 12 отв. ∅4.2 под винты М4 по периметру.</li>
+<li><strong>Передняя панель:</strong> НЧ ∅143 (центр X=178, Y=118), твитеры ∅48.4 (левый X=50, Y=113, правый X=306, Y=113), 12 отв. ∅4.2 под винты М4 по периметру, а также отверстие ∅3 мм под световод индикатора (позиция по месту, обычно справа внизу).</li>
 <li><strong>Накладка передней панели:</strong> вырезы под фланцы динамиков (твитеры 58×53 мм, вуфер ∅168 мм).</li>
-<li><strong>Верхняя панель:</strong> карманы под регулятор (∅30×11 мм, отв. ∅7 мм, X=110, Y=170), тумблер (∅20×10 мм, отв. ∅12 мм, X=50, Y=170), светодиод (∅5 мм, X=150, Y=170). Установить тумблер, потенциометр, светодиод, припаять провода.</li>
+<li><strong>Верхняя панель:</strong> карманы под регулятор (∅30×11 мм, отв. ∅7 мм, X=110, Y=170), тумблер (∅20×10 мм, отв. ∅12 мм, X=50, Y=170). Установить тумблер, потенциометр, припаять провода.</li>
 <li><strong>Задняя панель:</strong> отв. ∅8.5 мм под кнопку Старт (X=200, Y=30), отв. ∅6 мм под 3.5 мм (X=175, Y=80), вентиляция, 6 отв. ∅4.2.</li>
 <li><strong>Дно:</strong> 8 отв. ∅8 (вентиляция), глухие отверстия ∅5 мм под дюбели для точек экрана (см. 9.2), отверстия для пластины нижнего ввода (по углам 80×60 мм), воронка под нижний гермоввод.</li>
 <li><strong>Боковины, верхняя панель, перегородка:</strong> глухие отверстия ∅5 мм под дюбели для точек контакта (см. 9.2).</li>
-<li><strong>Перегородка:</strong> отверстие под угловой гермоввод PG13.5, глухие отверстия ∅5 мм под футорки для БП (4 шт.).</li>
+<li><strong>Перегородка:</strong> два переходных отверстия под жгуты (левое ∅12 мм, правое ∅8–10 мм) на 30–40 мм выше уровня колодок; глухие отверстия ∅5 мм под футорки для БП (4 шт.), для колодок (3 колодки × 2 ушка = 6 отверстий), для ABS-пластины индикатора (2 отверстия).</li>
 </ul>
 </li>
 <li>Установка футорок Permo D5: сверление Ø 5.0 мм, глубина 10.5–11 мм, вклеивание на эпоксидный клей.</li>
@@ -1172,7 +1256,7 @@
 </ul>
 </li>
 <li>Проверить прямоугольность, диагонали.</li>
-<li>Установить верхнюю панель с уже закреплёнными регулятором, тумблером и светодиодом.</li>
+<li>Установить верхнюю панель с уже закреплёнными регулятором и тумблером.</li>
 </ol>
 <h3 id="этап-3-монтаж-бп-и-реле">Этап 3. Монтаж БП и реле</h3>
 <ol>
@@ -1232,9 +1316,15 @@ NO реле (три группы параллельно) ───────�
 <li>Вход 3.5 мм → PolySwitch 0.1 А (в разрыв GND) → экранированный микрофонный кабель → AUX JAB4.</li>
 <li>Потенциометр громкости → экранированный кабель → ADC0, +3.3 В, GND. Корпус заземлить отдельно.</li>
 </ul>
-<h4 id="54-акустические-провода">5.4. Акустические провода</h4>
+<h4 id="54-акустические-провода-и-кабельная-сеть">5.4. Акустические провода и кабельная сеть</h4>
 <ul>
-<li>От выходов JAB4 скрутить три витые пары (НЧ, левый твитер, правый твитер). Пропустить через угловой гермоввод PG13.5 на перегородке. Затянуть гермоввод.</li>
+<li>От выходов JAB4 скрутить три витые пары (НЧ, левый твитер, правый твитер).</li>
+<li>Сформировать два жгута: <strong>силовой</strong> (НЧ + ВЧ) и <strong>сигнальный</strong> (LED + резерв). Каждый жгут обмотать тканевой изолентой.</li>
+<li>Пропустить силовой жгут через левое отверстие в перегородке, сигнальный – через правое. На участках прохода надеть клеевую термоусадку.</li>
+<li>Подключить провода к соответствующим колодкам на перегородке (силовой жгут к ТВ-2504 и ТВ-1504 слева, сигнальный – к ТВ-1504 справа).</li>
+<li>Зафиксировать жгуты стяжками с площадками на дне акустического отсека.</li>
+<li>Залить переходные отверстия PU-40 со стороны электронного отсека.</li>
+<li></li>
 </ul>
 <h4 id="55-заземление">5.5. Заземление</h4>
 <ul>
@@ -1250,8 +1340,9 @@ NO реле (три группы параллельно) ───────�
 <h3 id="этап-7-динамики-накладка-и-передняя-панель">Этап 7. Динамики, накладка и передняя панель</h3>
 <ol>
 <li>Через отверстия динамиков уложить матерчатые подушки с синтепоном.</li>
-<li>Установить WAGO 221‑412 (6 шт.) на стенках акустического отсека, в 5–8 см от перегородки.</li>
-<li>Подключить провода от усилителя и «хвосты» динамиков к WAGO.</li>
+<li>Установить клеммные колодки на перегородке (ТВ-2504, ТВ-1504 слева, ТВ-1504 справа) через футорки, подложив фоамиран.</li>
+<li>Подключить провода от усилителя и «хвосты» динамиков к колодкам (вилочные наконечники).</li>
+<li>Смонтировать индикаторный модуль на передней панели: вклеить световод, установить держатель на ABS-пластину, прикрутить к панели, вставить светодиод, подключить провода к колодке.</li>
 <li>Приклеить накладку ABS к наружной стороне передней панели (неламинированной). Обеспечить непрерывный клеевой слой, особенно вокруг отверстий.</li>
 <li>Установить динамики:
 <ul>
@@ -1303,8 +1394,9 @@ NO реле (три группы параллельно) ───────�
 <h3 id="шаг-5-финальное-подключение-и-тест-звука">Шаг 5. Финальное подключение и тест звука</h3>
 <ul>
 <li>Выключить питание (тумблер в OFF).</li>
-<li>Подключить клеммники WAGO с проводами динамиков к выходам JAB4.</li>
+<li>Подключить клеммные колодки с проводами динамиков к выходам JAB4 (уже подключены).</li>
 <li>Включить систему (тумблер ON, кнопка Старт). В динамиках должна быть тишина (допускается едва заметное шипение у твитера).</li>
+<li>Проверить свечение индикатора на передней панели.</li>
 <li>Подключить источник (Bluetooth или AUX), выставить минимальную громкость, запустить трек и плавно прибавить звук.</li>
 </ul>
 <hr>
@@ -1533,6 +1625,16 @@ NO реле (три группы параллельно) ───────�
 <td style="text-align:left"></td>
 <td style="text-align:left">Левый − / Правый −</td>
 <td style="text-align:left">Чёрный (с меткой)</td>
+</tr>
+<tr>
+<td style="text-align:left">LED индикатор</td>
+<td style="text-align:left">+ (после резистора)</td>
+<td style="text-align:left">Оранжевый</td>
+</tr>
+<tr>
+<td style="text-align:left"></td>
+<td style="text-align:left">−</td>
+<td style="text-align:left">Чёрный (с меткой LED−)</td>
 </tr>
 </tbody>
 </table>
