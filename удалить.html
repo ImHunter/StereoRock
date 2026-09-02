@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>&Ocy;&bcy;&shchcy;&icy;&jcy; &kcy;&ocy;&ncy;&tcy;&iecy;&kcy;&scy;&tcy; &pcy;&rcy;&ocy;&iecy;&kcy;&tcy;&acy;</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <span id="markdown-mermaid" aria-hidden="true" data-config="{&quot;darkModeTheme&quot;:&quot;vscode&quot;,&quot;lightModeTheme&quot;:&quot;vscode&quot;,&quot;maxTextSize&quot;:50000,&quot;clickDrag&quot;:&quot;alt&quot;,&quot;showControls&quot;:&quot;onHoverOrFocus&quot;,&quot;resizable&quot;:true,&quot;maxHeight&quot;:&quot;&quot;}"></span>
+				<h2 id="общий-контекст-проекта">Общий контекст проекта</h2>
+<p>Мы проектируем <strong>активную колонку-моноблок</strong> с возможностью воспроизведения стереозвука, используя единый корпус.<br>
+Основные компоненты:</p>
+<ul>
+<li><strong>НЧ/СЧ-динамик:</strong> Wavecor WF168OM01 (6.5″, 4 Ом) в закрытом ящике объёмом ~5.9 л.</li>
+<li><strong>Два твитера:</strong> Sica LP53x58.28/N20 TW (1″, 8 Ом) для разнесённой стереопанорамы.</li>
+<li><strong>Усилитель с DSP:</strong> Wondom JAB4 (TPA3221 + ADAU1701) — 4 канала, активный кроссовер, Bluetooth.</li>
+<li><strong>Блок питания:</strong> Mean Well LRS-100-24 (24 В, 4.5 А, 108 Вт).</li>
+<li><strong>Корпус:</strong> МДФ 16 мм (каркас) + ABS-пластик (задняя панель, накладка). Отсек электроники глубиной 58 мм, акустический отсек глубиной 110 мм.</li>
+<li><strong>Органы управления:</strong> регулятор громкости (потенциометр) и тумблер на верхней панели; кнопка «Старт» и вход 3.5 мм на задней панели (кнопку планируем перенести на боковину).</li>
+<li><strong>Питание:</strong> 220 В через нижний гермоввод, предохранитель, NTC-термистор, реле самоподхвата.</li>
+</ul>
+<h2 id="задача">Задача</h2>
+<ul>
+<li><strong>Минимальное количество действий при включении</strong> (в идеале — одно).</li>
+<li><strong>Слаботочность верхней панели</strong> — там не должно быть сетевых (220 В) проводов, только низковольтные цепи (24 В и сигнальные).</li>
+</ul>
+<p>Исходная схема требовала двух действий: включить тумблер (24 В) и нажать кнопку «Старт». Нужно либо сохранить два действия, но оптимизировать размещение, либо переработать схему для одношагового включения, сохранив слаботочный верх.</p>
+<h2 id="текущая-логика-схемы">Текущая логика схемы</h2>
+<ol>
+<li>
+<p><strong>Включение:</strong></p>
+<ul>
+<li>Пользователь включает тумблер (24 В) на верхней панели. Это подаёт напряжение на катушку реле, но БП ещё не запитан.</li>
+<li>Затем нажимает кнопку «Старт» (кратковременно замыкает фазу 220 В на вход БП). БП запускается, на его выходе появляется +24 В, катушка реле срабатывает, контакты реле замыкаются и шунтируют кнопку (самоподхват). Кнопку можно отпустить.</li>
+<li>Итог: два действия.</li>
+</ul>
+</li>
+<li>
+<p><strong>Выключение:</strong></p>
+<ul>
+<li>Пользователь выключает тумблер (разрывает цепь катушки реле). Реле отключается, контакты размыкаются, БП обесточивается.</li>
+<li>Итог: одно действие.</li>
+</ul>
+</li>
+<li>
+<p><strong>Защита от случайного включения:</strong></p>
+<ul>
+<li>При пропадании сетевого напряжения реле отпадает (катушка обесточена). При восстановлении сети БП не запустится, пока снова не будет нажата кнопка «Старт», даже если тумблер остался во включённом положении.</li>
+</ul>
+</li>
+</ol>
+<h2 id="текущая-реализация-схемы">Текущая реализация схемы</h2>
+<p><strong>Силовая цепь 220 В:</strong></p>
+<ul>
+<li>Фаза L от нижнего ввода → предохранитель T 2.5 A → NTC 5D-15 (ограничение пускового тока) → точка разветвления.</li>
+<li>Из точки разветвления одна ветвь идёт на кнопку «Старт» (momentary NO), другая — на общие контакты (COM) реле (три группы соединены параллельно для надёжности).</li>
+<li>Нормально разомкнутые контакты (NO) реле (также три параллельно) подключены к клемме L блока питания.</li>
+<li>Нейтраль N и защитное заземление PE идут напрямую от нижнего ввода к соответствующим клеммам БП (PE — на клемму FG).</li>
+</ul>
+<p><strong>Цепь управления (24 В):</strong></p>
+<ul>
+<li>Катушка реле 24 В DC: один вывод (A1) через тумблер на верхней панели подключён к +24 В выхода БП, другой (A2) — к GND БП.</li>
+<li>Параллельно катушке установлен защитный диод 1N4007 (катод к A1, анод к A2).</li>
+</ul>
+<p><strong>Работа:</strong></p>
+<ul>
+<li>При нажатии кнопки «Старт» фаза через неё поступает на БП, БП запускается, появляется +24 В, катушка реле срабатывает, замыкая контакты NO. Теперь фаза на БП идёт через замкнутые контакты реле, кнопку можно отпустить.</li>
+<li>Тумблер служит для отключения: разрывая цепь катушки, он снимает питание с реле, контакты размыкаются, БП обесточивается.</li>
+</ul>
+<p><strong>Изменения, которые сейчас рассматриваем:</strong></p>
+<ul>
+<li>Замена реле HH63P (3 группы, с колодкой) на <strong>LY2N-J</strong> (DPDT, 10 А) с базой PTF08A-E — компактнее, дешевле, без пайки.</li>
+<li>Перенос кнопки «Старт» на левую боковину (рядом с реле), поиск кнопки 19 мм 10 А momentary длиной ≤25 мм.</li>
+<li>Возможное добавление RC-снаббера для защиты контактов.</li>
+</ul>
+<p><strong>Проблема:</strong> текущая схема требует двух действий для включения. Рассматриваем пути решения: добавление дежурного маломощного источника питания для катушки реле, чтобы тумблер сразу запускал БП, или другие варианты.</p>
+
+            
+            
+        </body>
+        </html>
